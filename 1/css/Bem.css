@@ -69,7 +69,7 @@ body{
     text-indent: 40px;
     line-height: 0.7;
 }
-.content-row1, .content-row2 h1{
+.content-row1, .content-row2, .content-row3 h1{
     word-spacing: 3px;
     letter-spacing: 1px;
 }
@@ -85,6 +85,12 @@ body{
     letter-spacing: 1px;
     line-height: 0.3;
 }
+.content-row3 p{
+    color: dimgray;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 0.3;
+}
 button{
     background-color: #ed3237;
     color: white;
@@ -93,9 +99,31 @@ button{
     height: 40px;
     box-shadow: -2px 2px #cecece;
 }
+.content-button{
+    align-content: space-between;
+}
 .content-line{
     padding-top: 55px;
 }
+
 .content-row2{
-    padding-top: 50px;
+    padding-top: 30px;
+}
+.content-blocks{
+    padding-top: 2%;
+    text-align: justify;
+}
+.content-block-left{
+    float: left;
+    width: 300px;
+    margin-left: 5%;
+
+}
+.content-block-center{
+    float: left;
+    width: 300px;
+}
+.content-block-right{
+    float: left;
+    width: 300px;
 }
