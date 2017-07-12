@@ -175,11 +175,12 @@ button{
     margin-right: 30px;
 }
 .content-line--second-line{
-    padding-top: 20px;
+    padding-top: 60px;
 }
 .cloud-tags h4{
     color: black;
     padding-top: 40px;
+    margin-top: -75px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -191,10 +192,10 @@ button{
 }
 .cloud-tags--donce{
     margin-right: -150px;
-    margin-top: -47px;
+    margin-top: -50px;
 }
 .cloud-tags--fermnutim{
-    margin-top: -45px;
+    margin-top: -55px;
     margin-right: -165px;
 }
 .cloud-tags--namdui{
@@ -202,7 +203,7 @@ button{
 }
 .cloud-tags--porttion{
     margin-right: -265px;
-    margin-top: -45px;
+    margin-top: -55px;
 }
 .cloud-tags--voluptanin{
     margin-left: -280px;
