@@ -1,3 +1,7 @@
+html{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
 body{
     background-image: url(../images/info.gif);
     width: 100%;
@@ -12,6 +16,8 @@ body{
     position: absolute;
     min-width: 1230px;
     min-height: 100%;
+    left: 20%;
+    right: 20%;
     margin:0 auto;
     background-color: #ebebeb;
 
@@ -30,10 +36,13 @@ body{
     text-align: center;
 }
 .footer{
-    width: 1230px;
-    height: 30px;
-    background-color: burlywood;
     text-align: center;
+    margin: 0 auto;
+    margin-top: 2380px;
+    margin-left: -380px;
+}
+.footer__description{
+    color: white;
 }
 .header__menu{
     height: 35px;
@@ -41,27 +50,27 @@ body{
     padding-top: 53px;
     letter-spacing: 1px;
 }
-.header__menu > ul > li{
+.header__menu_item{
     display: inline-block;
     list-style: none;
     margin-right: 40px;
     border-top: 1px solid;
     border-bottom: 1px solid;
 }
-.header__menu > ul > li a{
+.header__menu_link{
     color: black;
     text-decoration: none;
     text-align: center;
 }
-.header__menu > ul > li a:hover{
+.header__menu_link:hover{
     color: red;
 }
 .content-banner{
     width: 1225px;
-    padding-top: 28px;
+    padding-top: 30px;
 
 }
-.content-banner img{
+.content-banner_image{
     width: 1160px;
     border-radius: 10px;
     border-top-right-radius: 0px;
@@ -69,27 +78,31 @@ body{
 }
 .content-row{
     padding-top: 20px;
+    margin-left: -60px;
     text-align: center;
     text-indent: 40px;
     line-height: 0.7;
 }
-.content-row h1{
+.content-row_description h1{
     word-spacing: 3px;
     letter-spacing: 1px;
 }
-.content-row p{
+.content-row_description{
     color: dimgray;
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 0.3;
 }
 button{
-    background-color: #ed3237;
-    color: white;
-    border-radius: 12px;
+    background-image: url(../images/row1-button.gif);
     width: 125px;
     height: 40px;
-    box-shadow: -2px 2px #cecece;
+    cursor: pointer;
+    margin-top: -60px;
+    padding-top: 30px;
+    border-radius: 10px;
+    position: relative;
+    text-decoration: none;
 }
 .content__button{
     align-content: space-between;
@@ -106,10 +119,12 @@ button{
 
 .content-block-information{
     /*float: left;*/
-    width: 370px;
+    width: 30%;
     text-align: left;
 }
 .content-block-information__banner{
+    margin: 0 1%;
+    margin-top: 15px;
     width: 270px;
     height: 410px;
     padding-top: 10px;
@@ -136,19 +151,20 @@ button{
 
 }
 .content-row--info-lorem{
-    padding-top: 50px;
+    padding-top: 40px;
 }
 .content-row--info-vivamus{
-    padding-top: 15px;
+    margin-top: 10px;
 }.content-row--info-cras{
-    padding-top: 100px;
+    padding-top: 105px;
  }
  .content-row-info-nunc{
-     padding-top: 30px;
+     padding-top: 20px;
  }
  .content-row-info-nunc h4{
      color: #ed3237;
      letter-spacing: 1px;
+     padding-top: 10px;
 
  }
 .content-blocks--group-text{
@@ -175,7 +191,7 @@ button{
     margin-right: 30px;
 }
 .content-line--second-line{
-    padding-top: 60px;
+    padding-top: 20px;
 }
 .cloud-tags h4{
     color: black;
@@ -187,41 +203,43 @@ button{
     align-items: flex-start;
 }
 .cloud-tags--integer{
-    margin-left: -170px;
-    padding-top: 35px;
+    margin-left: -180px;
+    margin-top: 40px;
 }
 .cloud-tags--donce{
-    margin-right: -150px;
+    margin-right: -160px;
     margin-top: -50px;
 }
 .cloud-tags--fermnutim{
-    margin-top: -55px;
-    margin-right: -165px;
+    margin-top: -50px;
+    margin-right: -145px;
 }
 .cloud-tags--namdui{
-    margin-left: -120px;
+    margin-left: -140px;
+    margin-top: -5px;
 }
 .cloud-tags--porttion{
-    margin-right: -265px;
-    margin-top: -55px;
+    margin-right: -245px;
+    margin-top: -52px;
 }
 .cloud-tags--voluptanin{
-    margin-left: -280px;
+    margin-left: -290px;
+    margin-top: -5px;
 }
 .cloud-tags--tincidun{
-    margin-top: -45px;
-    margin-left: -20px ;
+    margin-top: -53px;
+    margin-left: -40px ;
 }
-.logo{
+.wrapper__logo{
     position: absolute;
     margin-top: -50px;
     margin-left: 480px;
 }
-.logo h1{
+.wrapper__logo_text{
     position: absolute;
     top: 5px;
     left: 30px;
     text-align: center;
     font-size: 38px;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
 }

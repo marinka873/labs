@@ -9,43 +9,43 @@
 </head>
 <body>
 <div class="wrapper">
-    <div class="logo">
+    <div class="wrapper__logo">
             <img src="images/logo_bg.gif">
-            <h1>SITENAME</h1>
+            <h1 class="wrapper__logo_text">SITENAME</h1>
     </div>
         <header class="header">
             <nav class="header__menu">
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERICES</a></li>
-                    <li><a href="#">PRODUCTS</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li class="header__menu_item"><a href="#" class="header__menu_link">HOME</a></li>
+                    <li class="header__menu_item"><a href="#" class="header__menu_link">ABOUT</a></li>
+                    <li class="header__menu_item"><a href="#" class="header__menu_link">SERICES</a></li>
+                    <li class="header__menu_item"><a href="#" class="header__menu_link">PRODUCTS</a></li>
+                    <li class="header__menu_item"><a href="#" class="header__menu_link">CONTACT</a></li>
                 </ul>
             </nav>
         </header>
 
         <div class="content">
             <div class="content-banner">
-                <img src="images/banner.gif">
+                <img src="images/banner.gif" class="content-banner_image">
             </div>
             <div class="content-row content-row--info-lorem">
-                <h1>LOREM IPSUM</h1>
-                <p>Donec nec justo eget felis facilisis fermentum.</p>
-                <p>Aliquam porttit or mauris sit amet orci. Aenean dignissim pellentesque felic.</p>
+                <h1 class="content-row_description--big">LOREM IPSUM</h1>
+                <p class="content-row_description">Donec nec justo eget felis facilisis fermentum.</p>
+                <p class="content-row_description">Aliquam porttit or mauris sit amet orci. Aenean dignissim pellentesque felic.</p>
             </div>
             <div class="content-line">
                 <div class="content-line__lines">
                     <img src="images/row1-line.gif">
                     <button content="content__button">
-                     <b>READ MORE</b>
+                     <h4>READ MORE</h4>
                     </button>
                 </div>
         </div>
             <div class="content-row content-row--info-vivamus">
                 <h1>VIVAMUS VEST </h1>
-                <p>Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit.</p>
-                <p>Pellentsque egestas sem. Suspendisse commodo ullamcorper magna.</p>
+                <p class="content-row_description">Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit.</p>
+                <p class="content-row_description">Pellentsque egestas sem. Suspendisse commodo ullamcorper magna.</p>
             </div>
 
             <div class="content-blocks content-blocks--group-text">
@@ -69,7 +69,7 @@
 
             <div class="content-row content-row--info-cras">
                 <h1>CRAS IACULIS</h1>
-                <p>Fusce lobortis lorem at ipsum semper sagittis</p>
+                <p class="content-row_description">Fusce lobortis lorem at ipsum semper sagittis</p>
             </div>
 
             <div class="content-blocks content-blocks--group-banner">
@@ -116,9 +116,9 @@
 
             <div class="content-row content-row-info-nunc">
                 <h1>NUNC DIGNISS</h1>
-                <p>Preasent dapibus, neque id curcus faucibus,</p>
-                <p>tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat</p>
-                <p>vultupat. Nam dui mi, tincidunt quis, accumsan portittor.</p>
+                <p class="content-row_description">Preasent dapibus, neque id curcus faucibus,</p>
+                <p class="content-row_description">tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat</p>
+                <p class="content-row_description">vultupat. Nam dui mi, tincidunt quis, accumsan portittor.</p>
                 <h4>OUR PRODUCTS</h4>
             </div>
 
@@ -156,16 +156,18 @@
             <div class="content-line content-line--second-line">
                 <div class="content-line__lines">
                     <img src="images/row1-line.gif">
-                    <button content="content__button">
-                        <b>VIEW MORE</b>
-                    </button>
+                    <form>
+                        <button content="content__button">
+                            <h4>VIEW MORE</h4>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 <footer class="footer">
-        <p>Copyright(c) website name</p>
-        <p>Designed by: www.alltemplateneeds.com / Images from: www.wallpaperswide.com </p>
+        <p class="footer__description">Copyright(c) website name</p>
+        <p class="footer__description">Designed by: www.alltemplateneeds.com / Images from: www.wallpaperswide.com </p>
 </footer>
 </body>
 </html>
