@@ -39,7 +39,7 @@ body{
     text-align: center;
     margin: 0 auto;
     margin-top: 2380px;
-    margin-left: -380px;
+    margin-left: -510px;
 }
 .footer__description{
     color: white;
@@ -93,19 +93,19 @@ body{
     letter-spacing: 1px;
     line-height: 0.3;
 }
-button{
-    background-image: url(../images/row1-button.gif);
-    width: 125px;
-    height: 40px;
-    cursor: pointer;
-    margin-top: -60px;
-    padding-top: 30px;
-    border-radius: 10px;
-    position: relative;
-    text-decoration: none;
-}
 .content__button{
-    align-content: space-between;
+    width: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    user-select: none;
+    background: #ed3237;
+    padding: .7em 1.5em;
+    border-radius: 5px;
+    box-shadow: -5px 5px #d3d3d3;
+}
+.content__button:hover{
+    background-color: #fa464a;
 }
 .content-line{
     padding-top: 55px;
@@ -118,9 +118,16 @@ button{
 }
 
 .content-block-information{
-    /*float: left;*/
     width: 30%;
     text-align: left;
+}
+.content-block-information__image{
+    width: 100%;
+    margin-right: -100%;
+
+}
+.content-block-information-text{
+    margin-left: 10%;
 }
 .content-block-information__banner{
     margin: 0 1%;
@@ -132,10 +139,6 @@ button{
     box-shadow: -10px 10px #d3d3d3;
     border-radius: 10px;
     border-top-right-radius: 0px;
-}
-.content-block-information img{
-    width: 100%;
-    height: 150px;
 }
 .content-block__image{
     width: 80px;
@@ -159,7 +162,7 @@ button{
     padding-top: 105px;
  }
  .content-row-info-nunc{
-     padding-top: 20px;
+     padding-top: 21px;
  }
  .content-row-info-nunc h4{
      color: #ed3237;
@@ -171,7 +174,7 @@ button{
     padding-top: 25px;
 }
 .content-blocks--group-banner{
-    padding-top: 35px;
+    padding-top: 40px;
     justify-content: center;
 }
 .content-blocks--group-banner h4{
