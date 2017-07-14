@@ -50,19 +50,19 @@ body{
     padding-top: 53px;
     letter-spacing: 1px;
 }
-.header__menu_item{
+.header__menu__item{
     display: inline-block;
     list-style: none;
     margin-right: 40px;
     border-top: 1px solid;
     border-bottom: 1px solid;
 }
-.header__menu_link{
+.header__menu__link{
     color: black;
     text-decoration: none;
     text-align: center;
 }
-.header__menu_link:hover{
+.header__menu__link:hover{
     color: red;
 }
 .content-banner{
@@ -70,7 +70,7 @@ body{
     padding-top: 30px;
 
 }
-.content-banner_image{
+.content-banner__image{
     width: 1160px;
     border-radius: 10px;
     border-top-right-radius: 0px;
@@ -83,11 +83,11 @@ body{
     text-indent: 40px;
     line-height: 0.7;
 }
-.content-row_description h1{
+.content-row__description h1{
     word-spacing: 3px;
     letter-spacing: 1px;
 }
-.content-row_description{
+.content-row__description{
     color: dimgray;
     font-size: 18px;
     letter-spacing: 1px;
@@ -139,6 +139,10 @@ body{
     box-shadow: -10px 10px #d3d3d3;
     border-radius: 10px;
     border-top-right-radius: 0px;
+}
+.content-block-information__banner--align-image{
+    width: 270px;
+    height: 147px;
 }
 .content-block__image{
     width: 80px;
@@ -205,31 +209,31 @@ body{
     justify-content: center;
     align-items: flex-start;
 }
-.cloud-tags--integer{
+.cloud-tags__item--integer{
     margin-left: -180px;
     margin-top: 40px;
 }
-.cloud-tags--donce{
+.cloud-tags__item--donce{
     margin-right: -160px;
     margin-top: -50px;
 }
-.cloud-tags--fermnutim{
+.cloud-tags__item--fermnutim{
     margin-top: -50px;
     margin-right: -145px;
 }
-.cloud-tags--namdui{
+.cloud-tags__item--namdui{
     margin-left: -140px;
     margin-top: -5px;
 }
-.cloud-tags--porttion{
+.cloud-tags__item--porttion{
     margin-right: -245px;
     margin-top: -52px;
 }
-.cloud-tags--voluptanin{
+.cloud-tags__item--voluptanin{
     margin-left: -290px;
     margin-top: -5px;
 }
-.cloud-tags--tincidun{
+.cloud-tags__item--tincidun{
     margin-top: -53px;
     margin-left: -40px ;
 }
@@ -238,7 +242,7 @@ body{
     margin-top: -50px;
     margin-left: 480px;
 }
-.wrapper__logo_text{
+.wrapper__logo__text{
     position: absolute;
     top: 5px;
     left: 30px;
