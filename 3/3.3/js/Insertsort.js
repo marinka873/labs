@@ -30,4 +30,5 @@ function InsertSort(array)
     return array;
 }
 
+
 console.log('InsertSort',InsertSort(array));
