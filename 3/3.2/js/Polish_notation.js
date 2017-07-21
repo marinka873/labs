@@ -20,6 +20,12 @@ function MathSolver() {
                 } else if (postfix[i] === "^") {
                     resultStack.push(Math.pow(parseInt(b), parseInt(a)));
                 }
+                 else if (postfix[i] === "(" ){
+                    resultStack.pop();
+                }
+                else if (postfix[i] === ")"){
+                     resultStack.pop();
+                }
             }
         }
         if (resultStack.length > 1) {
