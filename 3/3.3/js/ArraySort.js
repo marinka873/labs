@@ -5,21 +5,22 @@ var selectSort = document.getElementsByClassName("sort").value;
 function GetArray() {
      var click = function () {
 
-         if (selectSort == select_bubble) {
+         if (selectSort == select_bubble){
              var sortArray = bubble;
          }
-         else if (selectSort == select_insert) {
+         else if (selectSort == select_insert){
              var sortArray = insert;
          }
-         else if (selectSort == select_quick) {
+         else  if (selectSort == select_quick){
              var sortArray = quick;
          }
-         else if (selectSort == select_shell) {
+         else if (selectSort == select_shell){
              var sortArray = shell;
          }
-         document.write(sortArray, selectSort);
-         document.getElementsByClassName("show_result").onclick = click();
+
      };
+     document.write(sortArray, selectSort);
+    document.getElementsByClassName("show_result").innerHTML = click();
  }
 // var array = [3, -34, 5, 67, 8, 50, 0 ];
 // var strArr = array.join(" ");
@@ -33,7 +34,7 @@ var quick = QuickSort(array);
 function BubbleSort(array)
 {
     let swap;
-    let n = array.length-1;
+    let n = array.length;
     let x = array;
     do {
         swap = false;
