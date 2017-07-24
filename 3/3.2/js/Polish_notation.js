@@ -1,30 +1,53 @@
-function MathSolver() {
+var expression = "3 4 * 2 5 + / 3 4 + *";
+
+var polska = new PolishNotation();
+
+function ConvertToPostfix() {
+    let postfixString = ' ';
+    let infixString = new ConvertToPostfix();
+
+    let priority = function(operator){
+        if (operator === "^"){
+            return 3;
+        } else if ( operator === "*" && operator === "/"){
+            return 2;
+        } else if (operator === "+" && operator === "-"){
+            return 1;
+        } else{
+            return 0;
+        }
+    };
+
+
+}
+
+function PolishNotation() {
 
     this.resultPostfix = function (postfix) {
-        var resultStack = [];
+        let resultStack = [];
         postfix = postfix.split(" ");
-        for (var i = 0; i < postfix.length; i++) {
+        for (let i = 0; i < postfix.length; i++) {
             if (postfix[i].isNumeric()) {
                 resultStack.push(postfix[i]);
             } else {
-                var a = resultStack.pop();
-                var b = resultStack.pop();
+                let a = resultStack.pop();
+                let b = resultStack.pop();
                 if (postfix[i] === "+") {
-                    resultStack.push(parseInt(a) + parseInt(b));
+                    resultStack.push(parseFloat(a) + parseFloat(b));
                 } else if (postfix[i] === "-") {
-                    resultStack.push(parseInt(b) - parseInt(a));
+                    resultStack.push(parseFloat(b) - parseFloat(a));
                 } else if (postfix[i] === "*") {
-                    resultStack.push(parseInt(a) * parseInt(b));
+                    resultStack.push(parseFloat(a) * parseFloat(b));
                 } else if (postfix[i] === "/") {
-                    resultStack.push(parseInt(b) / parseInt(a));
+                    resultStack.push(parseFloat(b) / parseFloat(a));
                 } else if (postfix[i] === "^") {
-                    resultStack.push(Math.pow(parseInt(b), parseInt(a)));
+                    resultStack.push(Math.pow(parseFloat(b), parseFloat(a)));
                 }
                  else if (postfix[i] === "(" ){
-                    resultStack.pop();
+                    resultStack.push();
                 }
                 else if (postfix[i] === ")"){
-                     resultStack.pop();
+                     resultStack.push();
                 }
             }
         }
@@ -38,4 +61,5 @@ function MathSolver() {
         return !isNaN(parseFloat(this)) && isFinite(this);
     }
 }
- 
+
+console.log(polska.resultPostfix(expression));

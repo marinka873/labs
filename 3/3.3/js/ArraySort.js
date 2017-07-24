@@ -1,6 +1,29 @@
-"use strict";
+var array = document.getElementsByClassName("insert__array").value;
+var selectSort = document.getElementsByClassName("sort").value;
 
-var array = ['1' , '-90', '5', '2', '67', '3'];
+
+function GetArray() {
+     var click = function () {
+
+         if (selectSort == select_bubble) {
+             var sortArray = bubble;
+         }
+         else if (selectSort == select_insert) {
+             var sortArray = insert;
+         }
+         else if (selectSort == select_quick) {
+             var sortArray = quick;
+         }
+         else if (selectSort == select_shell) {
+             var sortArray = shell;
+         }
+         document.write(sortArray, selectSort);
+         document.getElementsByClassName("show_result").onclick = click();
+     };
+ }
+// var array = [3, -34, 5, 67, 8, 50, 0 ];
+// var strArr = array.join(" ");
+// console.log('initial array:',array);
 
 var bubble = BubbleSort(array);
 var shell = ShellSort(array);
@@ -31,7 +54,7 @@ function BubbleSort(array)
 
 function InsertSort(array)
 {
-    for (let i = 1; i < array.length; i++)
+    for (let i = 0; i < array.length; i++)
     {
         if (array[i] < array[0])
         {
@@ -99,7 +122,6 @@ function ShellSort(arr){
     return array;
 }
 
-console.log('initial array:',array);
 console.log('Bubble sort:',bubble);
 console.log('Insert sort:',insert);
 console.log('Quick sort:', quick);

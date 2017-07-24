@@ -8,12 +8,17 @@
 <body>
 <div class="container">
     <h1>Select sort</h1>
+    <form class="sort__form">
     <select name="sort">
-        <option value="bubble">Bubble sort</option>
-        <option value="insert">Insert sort</option>
-        <option value="quick">Quick sort</option>
-        <option value="shell">Shell sort</option>
+        <option value="select_bubble">Bubble sort</option>
+        <option value="select_insert">Insert sort</option>
+        <option value="select_quick">Quick sort</option>
+        <option value="select_shell">Shell sort</option>
     </select>
+        <input class="insert__array" type="text">
+        <input class="show_result" type="button" value="Result" onclick="GetArray()">
+        <input class="reset_value" type="reset" value="Reset">
+    </form>
 </div>
 </body>
 </html>
