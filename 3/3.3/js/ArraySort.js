@@ -1,6 +1,6 @@
 "use strict";
 
-var array = ["1", "45", "6", "12", "4", "42", "8", "23"];
+var array = ['1' , '-90', '5', '2', '67', '3'];
 
 var bubble = BubbleSort(array);
 var shell = ShellSort(array);

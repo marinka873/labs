@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="454a6a0c-605d-4915-8798-e36f596bfb9e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/3.3/js/BubbleSort.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/3.3/js/Insertsort.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/3.3/js/QuickSort.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/3.3/js/ShellSort.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/3.3/index.html" afterPath="$PROJECT_DIR$/3/3.3/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/3.3/js/ArraySort.js" afterPath="$PROJECT_DIR$/3/3.3/js/ArraySort.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -35,8 +29,8 @@
       <file leaf-file-name="ArraySort.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/3/3.3/js/ArraySort.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+            <state relative-caret-position="238">
+              <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -207,12 +201,12 @@
       <workItem from="1500530490749" duration="17035000" />
       <workItem from="1500633363881" duration="12766000" />
       <workItem from="1500877654767" duration="268000" />
-      <workItem from="1500887630961" duration="2513000" />
+      <workItem from="1500887630961" duration="2708000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47708000" />
+    <option name="totallyTimeSpent" value="47903000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -608,8 +602,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/3/3.3/js/ArraySort.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+        <state relative-caret-position="238">
+          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
           <folding />
         </state>
       </provider>
