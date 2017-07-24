@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="454a6a0c-605d-4915-8798-e36f596bfb9e" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/3/3.3/js/BubbleSort.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/3/3.3/js/Insertsort.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/3/3.3/js/QuickSort.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/3/3.3/js/ShellSort.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/3.5/js/ArraySearch.js" afterPath="$PROJECT_DIR$/3/3.5/js/ArraySearch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/3.3/index.html" afterPath="$PROJECT_DIR$/3/3.3/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/3.3/js/ArraySort.js" afterPath="$PROJECT_DIR$/3/3.3/js/ArraySort.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,113 +22,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ArraySort.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3/3.3/js/ArraySort.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-              <folding>
-                <marker date="1500650683788" expanded="true" signature="89:586" ph="{...}" />
-                <marker date="1500650683788" expanded="true" signature="136:581" ph="{...}" />
-                <marker date="1500650683788" expanded="true" signature="190:543" ph="{...}" />
-                <marker date="1500650683788" expanded="true" signature="279:505" ph="{...}" />
-                <marker date="1500650683788" expanded="true" signature="332:491" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/3/3.5/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArraySearch.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3/3.5/js/ArraySearch.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BubbleSort.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3/3.3/js/BubbleSort.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-              <folding>
-                <marker date="1500650124498" expanded="true" signature="105:499" ph="{...}" />
-                <marker date="1500650124498" expanded="true" signature="190:469" ph="{...}" />
-                <marker date="1500650124498" expanded="true" signature="256:450" ph="{...}" />
-                <marker date="1500650124498" expanded="true" signature="301:440" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Insertsort.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3/3.3/js/Insertsort.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-              <folding>
-                <marker date="1500476458280" expanded="true" signature="90:776" ph="{...}" />
-                <marker date="1500476458280" expanded="true" signature="139:756" ph="{...}" />
-                <marker date="1500476458280" expanded="true" signature="182:299" ph="{...}" />
-                <marker date="1500476458280" expanded="true" signature="348:429" ph="{...}" />
-                <marker date="1500476458280" expanded="true" signature="443:750" ph="{...}" />
-                <marker date="1500476458280" expanded="true" signature="528:740" ph="{...}" />
-                <marker date="1500476458280" expanded="true" signature="612:726" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuickSort.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3/3.3/js/QuickSort.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-              <folding>
-                <marker date="1500476443520" expanded="true" signature="88:658" ph="{...}" />
-                <marker date="1500476443520" expanded="true" signature="115:144" ph="{...}" />
-                <marker date="1500476443520" expanded="true" signature="357:598" ph="{...}" />
-                <marker date="1500476443520" expanded="true" signature="390:434" ph="{...}" />
-                <marker date="1500476443520" expanded="true" signature="469:513" ph="{...}" />
-                <marker date="1500476443520" expanded="true" signature="548:592" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/3/3.3/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+            <state relative-caret-position="238">
+              <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShellSort.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3/3.3/js/ShellSort.js">
+      <file leaf-file-name="ArraySort.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/3/3.3/js/ArraySort.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="44" lean-forward="false" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-              <folding>
-                <marker date="1500476458243" expanded="true" signature="92:539" ph="{...}" />
-                <marker date="1500476458243" expanded="true" signature="185:519" ph="{...}" />
-                <marker date="1500476458243" expanded="true" signature="230:472" ph="{...}" />
-                <marker date="1500476458243" expanded="true" signature="347:435" ph="{...}" />
-              </folding>
+            <state relative-caret-position="352">
+              <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -154,19 +68,19 @@
         <option value="$PROJECT_DIR$/3/.gitignore" />
         <option value="$PROJECT_DIR$/3/3.3/js/BubbleSort.css" />
         <option value="$PROJECT_DIR$/3/3.4/js/tree.json" />
-        <option value="$PROJECT_DIR$/3/3.3/js/QuickSort.js" />
-        <option value="$PROJECT_DIR$/3/3.3/js/Insertsort.js" />
-        <option value="$PROJECT_DIR$/3/3.3/js/ShellSort.js" />
         <option value="$PROJECT_DIR$/3/3.2/js/Calculator.js" />
         <option value="$PROJECT_DIR$/3/3.1/index.html" />
         <option value="$PROJECT_DIR$/3/3.1/js/Date.js" />
         <option value="$PROJECT_DIR$/3/3.2/js/Polish_notation.js" />
         <option value="$PROJECT_DIR$/3/3.2/index.html" />
         <option value="$PROJECT_DIR$/3/3.5/index.html" />
-        <option value="$PROJECT_DIR$/3/3.3/index.html" />
-        <option value="$PROJECT_DIR$/3/3.3/js/BubbleSort.js" />
-        <option value="$PROJECT_DIR$/3/3.3/js/ArraySort.js" />
         <option value="$PROJECT_DIR$/3/3.5/js/ArraySearch.js" />
+        <option value="$PROJECT_DIR$/3/3.3/js/BubbleSort.js" />
+        <option value="$PROJECT_DIR$/3/3.3/js/Insertsort.js" />
+        <option value="$PROJECT_DIR$/3/3.3/js/QuickSort.js" />
+        <option value="$PROJECT_DIR$/3/3.3/js/ShellSort.js" />
+        <option value="$PROJECT_DIR$/3/3.3/index.html" />
+        <option value="$PROJECT_DIR$/3/3.3/js/ArraySort.js" />
       </list>
     </option>
   </component>
@@ -205,7 +119,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,6 +161,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -292,12 +206,13 @@
       <workItem from="1500451016206" duration="15126000" />
       <workItem from="1500530490749" duration="17035000" />
       <workItem from="1500633363881" duration="12766000" />
-      <workItem from="1500877654767" duration="111000" />
+      <workItem from="1500877654767" duration="268000" />
+      <workItem from="1500887630961" duration="2513000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45038000" />
+    <option name="totallyTimeSpent" value="47708000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -354,44 +269,33 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/3/3.3/js/ArraySort.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1500650683788" expanded="true" signature="89:586" ph="{...}" />
-            <marker date="1500650683788" expanded="true" signature="136:581" ph="{...}" />
-            <marker date="1500650683788" expanded="true" signature="190:543" ph="{...}" />
-            <marker date="1500650683788" expanded="true" signature="279:505" ph="{...}" />
-            <marker date="1500650683788" expanded="true" signature="332:491" ph="{...}" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/3/3.3/js/BubbleSort.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding>
-            <marker date="1500650124498" expanded="true" signature="105:499" ph="{...}" />
-            <marker date="1500650124498" expanded="true" signature="190:469" ph="{...}" />
-            <marker date="1500650124498" expanded="true" signature="256:450" ph="{...}" />
-            <marker date="1500650124498" expanded="true" signature="301:440" ph="{...}" />
-          </folding>
+          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3/3.5/js/ArraySearch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/3/3.3/js/Insertsort.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding>
-            <marker date="1500476458280" expanded="true" signature="90:776" ph="{...}" />
-            <marker date="1500476458280" expanded="true" signature="139:756" ph="{...}" />
-            <marker date="1500476458280" expanded="true" signature="182:299" ph="{...}" />
-            <marker date="1500476458280" expanded="true" signature="348:429" ph="{...}" />
-            <marker date="1500476458280" expanded="true" signature="443:750" ph="{...}" />
-            <marker date="1500476458280" expanded="true" signature="528:740" ph="{...}" />
-            <marker date="1500476458280" expanded="true" signature="612:726" ph="{...}" />
-          </folding>
+          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -399,14 +303,63 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-          <folding>
-            <marker date="1500476443520" expanded="true" signature="88:658" ph="{...}" />
-            <marker date="1500476443520" expanded="true" signature="115:144" ph="{...}" />
-            <marker date="1500476443520" expanded="true" signature="357:598" ph="{...}" />
-            <marker date="1500476443520" expanded="true" signature="390:434" ph="{...}" />
-            <marker date="1500476443520" expanded="true" signature="469:513" ph="{...}" />
-            <marker date="1500476443520" expanded="true" signature="548:592" ph="{...}" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3/3.3/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3/3.3/js/ShellSort.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="44" lean-forward="false" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3/3.5/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3/3.3/js/ArraySort.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3/3.3/js/BubbleSort.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3/3.3/js/Insertsort.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3/3.3/js/QuickSort.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -422,12 +375,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="44" lean-forward="true" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-          <folding>
-            <marker date="1500476458243" expanded="true" signature="92:539" ph="{...}" />
-            <marker date="1500476458243" expanded="true" signature="185:519" ph="{...}" />
-            <marker date="1500476458243" expanded="true" signature="230:472" ph="{...}" />
-            <marker date="1500476458243" expanded="true" signature="347:435" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -514,15 +462,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" column="44" lean-forward="false" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
-          <folding>
-            <marker date="1500476458280" expanded="true" signature="90:776" ph="{...}" />
-            <marker date="1500476458280" expanded="true" signature="139:756" ph="{...}" />
-            <marker date="1500476458280" expanded="true" signature="182:299" ph="{...}" />
-            <marker date="1500476458280" expanded="true" signature="348:429" ph="{...}" />
-            <marker date="1500476458280" expanded="true" signature="443:750" ph="{...}" />
-            <marker date="1500476458280" expanded="true" signature="528:740" ph="{...}" />
-            <marker date="1500476458280" expanded="true" signature="612:726" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -530,14 +470,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-          <folding>
-            <marker date="1500476443520" expanded="true" signature="88:658" ph="{...}" />
-            <marker date="1500476443520" expanded="true" signature="115:144" ph="{...}" />
-            <marker date="1500476443520" expanded="true" signature="357:598" ph="{...}" />
-            <marker date="1500476443520" expanded="true" signature="390:434" ph="{...}" />
-            <marker date="1500476443520" expanded="true" signature="469:513" ph="{...}" />
-            <marker date="1500476443520" expanded="true" signature="548:592" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -545,12 +478,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" column="45" lean-forward="true" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
-          <folding>
-            <marker date="1500650124498" expanded="true" signature="105:499" ph="{...}" />
-            <marker date="1500650124498" expanded="true" signature="190:469" ph="{...}" />
-            <marker date="1500650124498" expanded="true" signature="256:450" ph="{...}" />
-            <marker date="1500650124498" expanded="true" signature="301:440" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -558,12 +486,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-          <folding>
-            <marker date="1500476458243" expanded="true" signature="92:539" ph="{...}" />
-            <marker date="1500476458243" expanded="true" signature="185:519" ph="{...}" />
-            <marker date="1500476458243" expanded="true" signature="230:472" ph="{...}" />
-            <marker date="1500476458243" expanded="true" signature="347:435" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -627,89 +550,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/3/3.3/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3/3.3/js/ShellSort.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="44" lean-forward="false" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-          <folding>
-            <marker date="1500476458243" expanded="true" signature="92:539" ph="{...}" />
-            <marker date="1500476458243" expanded="true" signature="185:519" ph="{...}" />
-            <marker date="1500476458243" expanded="true" signature="230:472" ph="{...}" />
-            <marker date="1500476458243" expanded="true" signature="347:435" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3/3.3/js/QuickSort.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-          <folding>
-            <marker date="1500476443520" expanded="true" signature="88:658" ph="{...}" />
-            <marker date="1500476443520" expanded="true" signature="115:144" ph="{...}" />
-            <marker date="1500476443520" expanded="true" signature="357:598" ph="{...}" />
-            <marker date="1500476443520" expanded="true" signature="390:434" ph="{...}" />
-            <marker date="1500476443520" expanded="true" signature="469:513" ph="{...}" />
-            <marker date="1500476443520" expanded="true" signature="548:592" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3/3.3/js/Insertsort.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding>
-            <marker date="1500476458280" expanded="true" signature="90:776" ph="{...}" />
-            <marker date="1500476458280" expanded="true" signature="139:756" ph="{...}" />
-            <marker date="1500476458280" expanded="true" signature="182:299" ph="{...}" />
-            <marker date="1500476458280" expanded="true" signature="348:429" ph="{...}" />
-            <marker date="1500476458280" expanded="true" signature="443:750" ph="{...}" />
-            <marker date="1500476458280" expanded="true" signature="528:740" ph="{...}" />
-            <marker date="1500476458280" expanded="true" signature="612:726" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3/3.3/js/BubbleSort.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding>
-            <marker date="1500650124498" expanded="true" signature="105:499" ph="{...}" />
-            <marker date="1500650124498" expanded="true" signature="190:469" ph="{...}" />
-            <marker date="1500650124498" expanded="true" signature="256:450" ph="{...}" />
-            <marker date="1500650124498" expanded="true" signature="301:440" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3/3.3/js/ArraySort.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <marker date="1500650683788" expanded="true" signature="89:586" ph="{...}" />
-            <marker date="1500650683788" expanded="true" signature="136:581" ph="{...}" />
-            <marker date="1500650683788" expanded="true" signature="190:543" ph="{...}" />
-            <marker date="1500650683788" expanded="true" signature="279:505" ph="{...}" />
-            <marker date="1500650683788" expanded="true" signature="332:491" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/3/3.5/js/ArraySearch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+        <state relative-caret-position="187">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -718,6 +562,54 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3/3.3/js/Insertsort.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="28" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3/3.3/js/BubbleSort.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="28" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3/3.3/js/QuickSort.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="28" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3/3.3/js/ShellSort.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="28" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3/3.3/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3/3.3/js/ArraySort.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding />
         </state>
       </provider>
