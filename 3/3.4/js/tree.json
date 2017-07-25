@@ -1,5 +1,5 @@
 {
-  "value" : 8,
+  "root" : 8,
   "left": {
     "value": 3,
     "right":{
