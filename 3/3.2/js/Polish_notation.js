@@ -1,4 +1,5 @@
-var expression = "3 4 * 2 5 + / 3 4 + *";
+var expressionPostfix = "5 3 2 + 8 * +";
+var expressionInfix = "3*3/(7+1)";
 
 var polska = new PolishNotation();
 
@@ -19,15 +20,15 @@ function priorityOf(x) {
     return priority[x] || 5;
 }
 
-function ConvertToPostfix(expression, dontPrint) {
+function ConvertToPostfix(expressionInfix, dontPrint) {
     let postfixString = ' ';
     let infixString = new ConvertToPostfix();
     let output = [];
     let Stack = [];
 
 
-    for (let i=1; i< expression.length; i++){
-        var x = expression[i];
+    for (let i=1; i< expressionInfix.length; i++){
+        var x = expressionInfix[i];
 
         if (x == "("){
             Stack.push(x);
@@ -58,7 +59,7 @@ function ConvertToPostfix(expression, dontPrint) {
 
         postfixString = output.join('');
 
-        !dontPrint && console.log(expression => postfixString);
+        !dontPrint && console.log(expressionInfix => postfixString);
     }
     return postfixString;
 
@@ -106,4 +107,4 @@ function PolishNotation() {
     }
 }
 
-console.log(polska.resultPostfix(expression));
+console.log(polska.resultPostfix(expressionPostfix));
