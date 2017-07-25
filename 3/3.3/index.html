@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <title>Task3_Sort</title>
     <script src="js/ArraySort.js"></script>
+    <script>
+        function fun(e) {
+            document.getElementById('caption').innerHTML = e.options[e.selectedIndex].text;
+        }
+    </script>
 </head>
 <body>
 <div class="container">
     <h1>Select sort</h1>
     <form class="sort__form">
-    <select name="sort">
+    <select name="sort" onchange="fun(this)">
         <option value="select_bubble">Bubble sort</option>
         <option value="select_insert">Insert sort</option>
         <option value="select_quick">Quick sort</option>
         <option value="select_shell">Shell sort</option>
     </select>
+        <h3 id="caption"></h3>
+        <h1>Original array: </h1>
+        <h3 class="OrigiginArr"></h3>
+        <hr>
         <input class="insert__array" type="text">
-        <input class="show_result" type="button" value="Result" onclick="GetArray()">
+        <input class="button_show_result" type="button" value="Result" >
         <input class="reset_value" type="reset" value="Reset">
+        <h2> Bubble sort:</h2>
     </form>
 </div>
 </body>

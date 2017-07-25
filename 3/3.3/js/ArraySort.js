@@ -1,30 +1,35 @@
-var array = document.getElementsByClassName("insert__array").value;
+var array = [3, -34, 5, 67, 8, 50, 0 ];
+console.log('Original array:',array);
+
+var ArrayInput = document.getElementsByClassName("insert__array").value;
 var selectSort = document.getElementsByClassName("sort").value;
 
+document.getElementsByClassName("button_show_result").innerHTML = bubble;
 
-function GetArray() {
-     var click = function () {
+function getOriginArray() {
+    document.getElementsByClassName("OriginArr").innerHTML = array;
+}
+// function GetArray() {
+//      var click = function () {
+//
+//          if (selectSort == select_bubble){
+//              var sortArray = bubble;
+//          }
+//          else if (selectSort == select_insert){
+//              var sortArray = insert;
+//          }
+//          else  if (selectSort == select_quick){
+//              var sortArray = quick;
+//          }
+//          else if (selectSort == select_shell){
+//              var sortArray = shell;
+//          }
+//
+//      };
+//      document.write(sortArray, selectSort);
+//     document.getElementsByClassName("show_result").innerHTML = click();
+//  }
 
-         if (selectSort == select_bubble){
-             var sortArray = bubble;
-         }
-         else if (selectSort == select_insert){
-             var sortArray = insert;
-         }
-         else  if (selectSort == select_quick){
-             var sortArray = quick;
-         }
-         else if (selectSort == select_shell){
-             var sortArray = shell;
-         }
-
-     };
-     document.write(sortArray, selectSort);
-    document.getElementsByClassName("show_result").innerHTML = click();
- }
-// var array = [3, -34, 5, 67, 8, 50, 0 ];
-// var strArr = array.join(" ");
-// console.log('initial array:',array);
 
 var bubble = BubbleSort(array);
 var shell = ShellSort(array);
