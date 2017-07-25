@@ -1,35 +1,50 @@
 
-window.onload = function (){
+document.onload = function (formattedDateVariantFirst, formattedDateVariantSecond, formattedDateVariantThree, formattedDateVariantFour,formattedDateVariantFive, formattedDateVariantSix, formattedDateVariantSeven){
     document.getElementById("date").innerHTML = Date.now();
-    var myDate = new Date(Date.now());
+    let myDate = new Date(Date.now());
 
-    var year = myDate.getFullYear();
-    var month = myDate.getMonth() + 1;
+    let year = myDate.getFullYear();
+    let month = myDate.getMonth() + 1;
     if (month < 11){
         month = "0" + month;
     }
-    var date = myDate.getDate();
+    let date = myDate.getDate();
     if (date < 11){
         date = "0";
     }
-    var formattedDate = year + "/" + month + "/" + date;
-    document.getElementById("result").innerHTML = formattedDate;
+   this.formattedDateVariantFirst = function (year, month, date) {
+       formattedDate = year + "/" + month + "/" + date;
+       document.getElementById("result").innerHTML = formattedDateVariantFirst;
+   };
 
-    var convertDate = year + "-" + month + "-" + date;
-    document.getElementById("result1").innerHTML = convertDate;
+    this.formattedDateVariantSecond = function (year, month, date) {
+        convertDate = year + "-" + month + "-" + date;
+        document.getElementById("result1").innerHTML = formattedDateVariantSecond;
+    };
 
-    var convertingDate = year + "-" + date + "-" + month;
-    document.getElementById("result2").innerHTML = convertingDate;
+    this.formattedDateVariantThree = function (year, month, date) {
+        convertingDate = year + "-" + date + "-" + month;
+        document.getElementById("result2").innerHTML = formattedDateVariantThree;
+    };
 
-    var convertingDate1 = date + "-" + month + "-" + year;
-    document.getElementById("result3").innerHTML = convertingDate1;
+    this.formattedDateVariantFour = function (year, month, date) {
+        convertingDate1 = date + "-" + month + "-" + year;
+        document.getElementById("result3").innerHTML = formattedDateVariantFour;
+    };
 
-    var convertingDate2 = date + "/" + month + "/" + year;
-    document.getElementById("result4").innerHTML = convertingDate2;
+    this.formattedDateVariantFive = function (year, month, date) {
+        convertingDate2 = date + "/" + month + "/" + year;
+        document.getElementById("result4").innerHTML = formattedDateVariantFive;
+    };
 
-    var convertingDate3 = month + "-" + date + "-" + year;
-    document.getElementById("result5").innerHTML = convertingDate3;
+    this.formattedDateVariantSix = function (year, month, date) {
+        convertingDate3 = month + "-" + date + "-" + year;
+        document.getElementById("result5").innerHTML = formattedDateVariantSix;
+    };
 
-     var convertingdate4 = month + "/" + date + "/" + year;
-     document.getElementById("result6").innerHTML = convertingdate4;
+    this.formattedDateVariantSeven = function (year, month, date) {
+        convertingdate4 = month + "/" + date + "/" + year;
+        document.getElementById("result6").innerHTML = formattedDateVariantSeven;
+    };
+
 };

@@ -1,3 +1,8 @@
+let tree = {
+    "root": {
+    }
+};
+
 function loadJSON(callback) {
     var treeObj = new XMLHttpRequest();
     treeObj.overrideMimeType("js");
@@ -14,4 +19,9 @@ function readTree() {
     loadJSON(function (response) {
         var actual_JSON = JSON.parse(response);
     });
+
+}
+
+function DFS(start) {
+
 }
