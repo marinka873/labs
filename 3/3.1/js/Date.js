@@ -1,5 +1,4 @@
-
-function DateFormattingMethods (formattedDateVariantFirst, formattedDateVariantSecond, formattedDateVariantThree, formattedDateVariantFour,formattedDateVariantFive, formattedDateVariantSix, formattedDateVariantSeven){
+function DateFormattingMethods (){
     document.getElementById("date").innerHTML = Date.now();
     let myDate = new Date(Date.now());
 
