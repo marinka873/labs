@@ -30,7 +30,6 @@ var rightChild = tree.right.NodeValue;
 
 var DFS = function () {
 
-
     searchNodeValue = function (node, key) {
         if (node.key === null){
             return null;
