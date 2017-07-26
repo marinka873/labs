@@ -1,5 +1,6 @@
 
-var arr = ['4' , '43', '90', '21', '5', '10', '12', '-2', '11' , '34'];
+var arrStr = ['4' , '43', '90', '21', '5', '10', '12', '-2', '11' , '34'];
+var arr = arrStr.slice(0, 100).map(Number);
 
 var minElement = FindMinElement(arr);
 var maxElement = FindMaxElement(arr);
@@ -63,7 +64,8 @@ function getMaxSubSumSecond(arr) {
     return maxSupSum;
 }
 
-console.log('array: 4, 43, 90, 21, 5, 10, 12, -2, 11 , 34');
+console.log('Origin string array', arrStr);
+console.log('Origin number array', arr);
 console.log('min value =', minElement);
 console.log('max value =', maxElement);
 console.log('median of array =', median());

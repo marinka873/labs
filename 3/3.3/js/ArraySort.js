@@ -1,5 +1,9 @@
-var array = [3, -34, 5, 67, 8, 50, 0 ];
-console.log('Original array:',array);
+
+var arrayString = ["3", "-34", "5", "67", "8", "50", "0"];
+var array = arrayString.slice(0, 100).map(Number);
+
+console.log('Origin string array', arrayString);
+console.log('Origin number array ',array);
 
 var ArrayInput = document.getElementsByClassName("insert__array").value;
 var selectSort = document.getElementsByClassName("sort").value;
@@ -29,7 +33,6 @@ function getOriginArray() {
 //      document.write(sortArray, selectSort);
 //     document.getElementsByClassName("show_result").innerHTML = click();
 //  }
-
 
 var bubble = BubbleSort(array);
 var shell = ShellSort(array);
