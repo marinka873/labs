@@ -1,6 +1,12 @@
 function DateFormattingMethods (){
-    document.getElementById("date").innerHTML = Date.now();
-    let myDate = new Date(Date.now());
+
+    var myDate = new Date(Date.now());
+    var convertDate = +new Date();
+
+
+    document.getElementById("date").innerHTML = myDate;
+    document.getElementById("convertingDate").innerHTML = convertDate;
+
 
     let year = myDate.getFullYear();
     let month = myDate.getMonth() + 1;
