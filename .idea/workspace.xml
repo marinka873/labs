@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="454a6a0c-605d-4915-8798-e36f596bfb9e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4/4.2/js/Currying.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/4/4.2/js/Carrying.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4/4.1/index.html" afterPath="$PROJECT_DIR$/4/4.1/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4/4.1/js/partialApplication.js" afterPath="$PROJECT_DIR$/4/4.1/js/partialApplication.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4/4.2/index.html" afterPath="$PROJECT_DIR$/4/4.2/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4/4.2/js/Currying.js" afterPath="$PROJECT_DIR$/4/4.2/js/Currying.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,17 +26,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="partialApplication.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="partialApplication.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/4/4.1/js/partialApplication.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="102">
+              <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/4/4.2/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -54,8 +49,8 @@
       <file leaf-file-name="Currying.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/4/4.2/js/Currying.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -116,8 +111,8 @@
         <option value="$PROJECT_DIR$/4/4.2/js/Carrying.js" />
         <option value="$PROJECT_DIR$/4/4.1/index.html" />
         <option value="$PROJECT_DIR$/4/4.2/index.html" />
-        <option value="$PROJECT_DIR$/4/4.2/js/Currying.js" />
         <option value="$PROJECT_DIR$/4/4.1/js/partialApplication.js" />
+        <option value="$PROJECT_DIR$/4/4.2/js/Currying.js" />
       </list>
     </option>
   </component>
@@ -240,12 +235,12 @@
       <workItem from="1500887630961" duration="20441000" />
       <workItem from="1500962725684" duration="25260000" />
       <workItem from="1501049739416" duration="19378000" />
-      <workItem from="1501144842695" duration="3337000" />
+      <workItem from="1501144842695" duration="4978000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113611000" />
+    <option name="totallyTimeSpent" value="115252000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -533,26 +528,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/4/4.2/index.html">
+    <entry file="file://$PROJECT_DIR$/4/4.1/js/partialApplication.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        <state relative-caret-position="102">
+          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/4/4.2/js/Currying.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/4/4.1/js/partialApplication.js">
+    <entry file="file://$PROJECT_DIR$/4/4.2/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="136">
+          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
           <folding />
         </state>
       </provider>
