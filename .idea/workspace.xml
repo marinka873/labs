@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="454a6a0c-605d-4915-8798-e36f596bfb9e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4/4.3/js/LinearFold.js" afterPath="$PROJECT_DIR$/4/4.3/js/LinearFold.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4/4.4/index.html" afterPath="$PROJECT_DIR$/4/4.4/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4/4.4/js/linearUnfold.js" afterPath="$PROJECT_DIR$/4/4.4/js/linearUnfold.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,11 +27,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="linearUnfold.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="linearUnfold.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/4/4.4/js/linearUnfold.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LinearFold.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/4/4.3/js/LinearFold.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -93,9 +103,9 @@
         <option value="$PROJECT_DIR$/4/4.2/js/Currying.js" />
         <option value="$PROJECT_DIR$/4/4.2/index.html" />
         <option value="$PROJECT_DIR$/4/4.3/index.html" />
-        <option value="$PROJECT_DIR$/4/4.3/js/LinearFold.js" />
         <option value="$PROJECT_DIR$/4/4.4/index.html" />
         <option value="$PROJECT_DIR$/4/4.4/js/linearUnfold.js" />
+        <option value="$PROJECT_DIR$/4/4.3/js/LinearFold.js" />
       </list>
     </option>
   </component>
@@ -218,12 +228,12 @@
       <workItem from="1500887630961" duration="20441000" />
       <workItem from="1500962725684" duration="25260000" />
       <workItem from="1501049739416" duration="19378000" />
-      <workItem from="1501144842695" duration="9120000" />
+      <workItem from="1501144842695" duration="9847000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119394000" />
+    <option name="totallyTimeSpent" value="120121000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -519,14 +529,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/4/4.3/js/LinearFold.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/4/4.4/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -538,7 +540,15 @@
     <entry file="file://$PROJECT_DIR$/4/4.4/js/linearUnfold.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4/4.3/js/LinearFold.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>

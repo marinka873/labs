@@ -1,5 +1,5 @@
 function linearUnfold(element){
-    
+
     const array =[];
 
     for (let i=element; i >0; --i){
