@@ -1,11 +1,17 @@
-function linearUnfold(element){
 
-    const array =[];
 
-    for (let i=element; i >0; --i){
+function Unfold(element, callback, initialValue){
+    var array =[];
+
+    for (var i=element; i >0; --i){
         array.push(i);
     }
     return array;
 }
 
-console.log(linearUnfold(10));
+// var reduce = function (currentState) {
+//     var newValue = currentState/2;
+//     return [newValue, currentState -1]
+// };
+
+console.log(Unfold(100));
