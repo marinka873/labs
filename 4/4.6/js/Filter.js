@@ -5,12 +5,18 @@ var arrFilter = arr.filter(function (number) {
 });
 console.log('Output number > 10 :',arrFilter);
 
-
-var filterArr =[];
-for (var i=0; i < arr.length; i++) {
-    if (arr[i] > 10){
-        filterArr.push(arr[i]);
+function filter (arr, callback) {
+    var resultFilter = [];
+    for (var i = 0; i < arr.length; i++) {
+        if (callback( arr[i], i, arr)) {
+            resultFilter.push(arr[i]);
+        }
     }
+    return resultFilter;
 }
+
+var filterArr = filter(arr, function(ArrValue) {
+    return ArrValue >= 10;
+});
 
 console.log('Output filter number > 10 :', filterArr);
