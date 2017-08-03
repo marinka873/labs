@@ -12,7 +12,7 @@ function Unfold(InitialValue, callback){
             resultUnfold.push(InitialValue);
             return resultUnfold;
         }
-       
+
     }
 }
 

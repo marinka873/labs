@@ -11,16 +11,17 @@ var randomArray = function (){
 var foldLinear = function (array, callback, initialValue) {
     var result = initialValue;
     for (var i=0; i < array.length; i++){
-        result = callback.call(null, result, array[i]);
+        result = callback( result, array[i]);
     }
     return result;
 };
+
 var a = randomArray();
-console.log(a);
+console.log('random',a);
 
 
 
-var sumArray = foldLinear(a, function (x, y) {
+var sumArray = foldLinear(array, function (x, y) {
     return x+y
 });
 
