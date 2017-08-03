@@ -1,0 +1,45 @@
+.wrapper{
+    background-color: darkgrey;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    height: 100%;
+}
+.container{
+    background-color: cornflowerblue;
+    margin: 0 auto;
+    width: 80%;
+}
+.description{
+    color: lightyellow;
+    font-size: 26px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-decoration: none;
+}
+.container__login{
+    padding: 5% 22%;
+    width: 94%;
+}
+.container__password{
+    padding: 2% 25%;
+    width: 80%;
+}
+.container__register{
+    padding: 5% 22%;
+    width: 90%;
+}
+.container__button{
+    margin-left: 20%;
+    padding: 2% 10%;
+    background-color: beige;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.container_button:hover{
+    background-color: antiquewhite;
+}
+.container__drop-image{
+
+}
