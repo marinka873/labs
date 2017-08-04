@@ -6,15 +6,6 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/jquery.registrationPage.js"></script>
-
-    <script>
-        $(function (){
-            $('container-select__image--drop').registrationPage();
-        })
-    </script>
-
 </head>
 <body>
 <div class="wrapper">
@@ -30,10 +21,15 @@
         </div>
 
 
-        <div class="container-drop__image">
+        <div class="container-dropzone">
             <h2 class="container-drop__description">Drop you photo here</h2>
             <input class="container-select__image--drop" type="file">
+            <div class="container-upload__image">
+                <img class="dropImage">
+                <img class="imageResultDrag">
+            </div>
         </div>
+
 
         <div class="container__register">
             <a class="container__button" href="#">Register</a>
@@ -43,6 +39,12 @@
     </div>
 
 </div>
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.registrationPage.js"></script>
+<script src="js/script.js "></script>
+
 
 </body>
 </html>

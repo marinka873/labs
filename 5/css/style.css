@@ -43,8 +43,11 @@
 .container__button:hover{
     background-color: antiquewhite;
 }
-.container-drop__image{
+.container-dropzone{
     text-align: center;
     height: 200px;
     border: 2px solid;
+}
+.container-dropzone.dragover{
+    border-color: crimson;
 }
