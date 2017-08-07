@@ -3,6 +3,7 @@
 
 
     $.fn.registrationPage = function () {
+        let buttonPost = $('.container__button');
         let dropArea = $('.container-dropzone');
 
         dropArea.on('dragover', function (element) {
@@ -21,48 +22,46 @@
             element.stopPropagation();
             element.preventDefault();
 
-            var files = element.target.files || (element.dataTransfer && element.dataTransfer.files);
-            if (files) {
-                uploadFiles(files[0]);
-            }
-            else {
-                alert("Error file upload");
-            }
+            let files = event.dataTransfer.files;
+            console.log(files);
+
+            uploadFiles(files);
         });
 
         function uploadFiles(files) {
-            for (var i = 0; i < files.length; i++) {
-                var file = files[i];
-                var imageType = /^image\//;
+            for (let i = 0; i < files.length; i++) {
+                let file = files[i];
+                let imageType = /^image\//;
+                let previewImage = document.getElementsByClassName('.container-dropzone');
 
                 if (!imageType.test(file.type.match)) {
                     continue;
                 }
 
-                var img = document.createElement("img");
-                img.classList.add("obj");
-                img.file = file;
-                $('container-dropzone').appendChild(img); // Assuming that "preview" is the div output where the content will be displayed.
-
-                var reader = new FileReader();
-                reader.onload = (function(aImg) { return function(e) { aImg.src = e.target.result; }; })(img);
-                reader.readAsDataURL(file);
+                let readerImage = new FileReader();
+                readerImage.onloadend = (function () {
+                    previewImage.src = readerImage.result;
+                });
+                if (file){
+                    readerImage.readAsDataURL(file);
+                } else{
+                    previewImage.src = "";
+                }
             }
         }
 
-        // console.log(dropArea);
         console.log('Jquery plugin is work!');
     };
 })(jQuery);
 
-$('container-select__image--drop').registrationPage();
+$('.container-dropzone').registrationPage();
 
 
 function postRequest () {
     let promise = new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve("result");
-        }, 3000);
+        }, 2000);
     });
 
     promise.then(result => {
@@ -73,17 +72,17 @@ function postRequest () {
 
 
 function loadImage() {
-    var preview = document.querySelector('img');
-    var file    = document.querySelector('input[type=file]').files[0];
-    var reader  = new FileReader();
+    let image = document.querySelector('img');
+    let file    = document.querySelector('input[type=file]').files[0];
+    let reader  = new FileReader();
 
     reader.onloadend = function () {
-        preview.src = reader.result;
+        image.src = reader.result;
     };
 
     if (file) {
         reader.readAsDataURL(file);
     } else {
-        preview.src = "";
+        image.src = "";
     }
 }
