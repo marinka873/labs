@@ -23,7 +23,7 @@
 
         <div class="container-dropzone">
             <h2 class="container-drop__description">Drop you photo here</h2>
-            <input class="container-select__image--drop" type="file">
+            <input class="container-select__image--drop" type="file" onchange="loadImage()" height="200">
             <div class="container-upload__image">
                 <img class="dropImage">
                 <img class="imageResultDrag">
@@ -32,14 +32,13 @@
 
 
         <div class="container__register">
-            <a class="container__button" href="#">Register</a>
+            <a class="container__button" href="#" onclick="postRequest()">Register</a>
         </div>
 
         </form>
     </div>
 
 </div>
-
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/jquery.registrationPage.js"></script>
