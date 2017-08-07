@@ -29,26 +29,6 @@
                 alert("Error file upload");
             }
         });
-        //
-        //
-        // function uploadImage(getFile) {
-        //     for (let i=0; i < getFile.length; i++){
-        //         let file = new getFile[i];
-        //         let typeImage = /^image\//;
-        //         let previewImage = document.querySelector('img');
-        //         $('container-dropzone').appendChild(img);
-        //
-        //
-        //         let readFile = new FileReader();
-        //         readFile.onload(function (aImg) {
-        //             return function(element){
-        //                 aImg.src= element.target.result;
-        //             }
-        //         })(img);
-        //         readFile.readAsDataURL(file);
-        //     }
-        // }
-
 
         function uploadFiles(files) {
             for (var i = 0; i < files.length; i++) {
