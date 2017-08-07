@@ -71,6 +71,9 @@ function postRequest () {
 
 
 
+
+
+
 function loadImage() {
     let image = document.querySelector('img');
     let file    = document.querySelector('input[type=file]').files[0];
