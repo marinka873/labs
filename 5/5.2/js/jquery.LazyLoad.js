@@ -2,28 +2,25 @@
     'use strict';
 
     $.fn.LazyLoad = function () {
+        let image = $('<img class=".content-page__image-get">').appendTo('.content-page__image');
         let loadAPI = 'https://jsonplaceholder.typicode.com/photos';
+
+
         $.ajax({
             url: 'https://jsonplaceholder.typicode.com/photos',
             dataType: "json",
-            success: function (message){
-                alert('loading API success');
+            success: function (){
+                console.log('loading API success');
             }
         });
 
-        $.get(loadAPI, function (getImage) {
-            $('.content-page__image').append(getImage);
-            console.log(getImage);
+
+        $.getJSON(loadAPI, function (data) {
+            let imagesGet = [];
+            $.each(data, function (key, value) {
+                $('<img>').attr('src', value.media).appendTo('.content-page__image');
+            });
         });
-
-        let createTagImage = function(){
-            $('.content-page__image').prepend('<img>');
-
-        };
-
-        let scrollPage = function(){
-
-        };
 
 
         console.log(loadAPI);
