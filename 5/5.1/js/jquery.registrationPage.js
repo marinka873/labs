@@ -46,10 +46,7 @@
         }
         dropArea.on('change', uploadFiles, false);
 
-
-
-        console.log('Jquery plugin is work!');
-    };
+};
 })(jQuery);
 
 $('.container').registrationPage();

@@ -24,7 +24,6 @@
 
 
         console.log(loadAPI);
-        console.log('Plugin Lazy work');
     };
 })(jQuery);
 
