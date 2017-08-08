@@ -18,7 +18,7 @@
         $.getJSON(loadAPI, function (data) {
             let imagesGet = [];
             $.each(data, function (key, value) {
-                $('<img>').attr('src', value.media).appendTo('.content-page__image');
+                $('<img>').attr('src', value).appendTo('.content-page__image');
             });
         });
 
