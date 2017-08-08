@@ -6,10 +6,24 @@
         $.ajax({
             url: 'https://jsonplaceholder.typicode.com/photos',
             dataType: "json",
-            success: function (image){
+            success: function (message){
                 alert('loading API success');
             }
         });
+
+        $.get(loadAPI, function (getImage) {
+            $('.content-page__image').append(getImage);
+            console.log(getImage);
+        });
+
+        let createTagImage = function(){
+            $('.content-page__image').prepend('<img>');
+
+        };
+
+        let scrollPage = function(){
+
+        };
 
 
         console.log(loadAPI);

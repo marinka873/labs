@@ -31,30 +31,28 @@
         function uploadFiles(files) {
             for (let i = 0; i < files.length; i++) {
                 let file = files[i];
-                let imageType = /^image\//;
-                let previewImage = document.getElementsByClassName('.container-dropzone');
-
-                if (!imageType.test(file.type.match)) {
-                    continue;
-                }
-
+                let img = $('img');
                 let readerImage = new FileReader();
-                readerImage.onloadend = (function () {
-                    previewImage.src = readerImage.result;
-                });
-                if (file){
+
+                if (file && file.type.match('image.*')) {
                     readerImage.readAsDataURL(file);
-                } else{
-                    previewImage.src = "";
+                } else {
+                    img.attr('src', '');
                 }
+                readerImage.onloadend = (function (e) {
+                    img.attr('src', readerImage.result);
+                });
             }
         }
+        dropArea.on('change', uploadFiles, false);
+
+
 
         console.log('Jquery plugin is work!');
     };
 })(jQuery);
 
-$('.container-dropzone').registrationPage();
+$('.container').registrationPage();
 
 
 function postRequest () {
@@ -67,25 +65,4 @@ function postRequest () {
     promise.then(result => {
         alert("You`ve been successfully registered to the website!");
     });
-}
-
-
-
-
-
-
-function loadImage() {
-    let image = document.querySelector('img');
-    let file    = document.querySelector('input[type=file]').files[0];
-    let reader  = new FileReader();
-
-    reader.onloadend = function () {
-        image.src = reader.result;
-    };
-
-    if (file) {
-        reader.readAsDataURL(file);
-    } else {
-        image.src = "";
-    }
 }
