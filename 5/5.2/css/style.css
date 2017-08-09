@@ -8,6 +8,13 @@
     background-color: lavenderblush;
     width: 90%;
 }
-.content-page__image{
-
+.content-page__image-get{
+    width: 600px;
+    height: 600px;
+    transition: 200ms;
+}
+img{
+    width: 600px;
+    height: 600px;
+    border: 1px solid;
 }

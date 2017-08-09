@@ -2,8 +2,9 @@
     'use strict';
 
     $.fn.LazyLoad = function () {
-        let image = $('<img class=".content-page__image-get">').appendTo('.content-page__image');
         let loadAPI = 'https://jsonplaceholder.typicode.com/photos';
+        let image = document.getElementsByTagName('img');
+        let imageGet = document.getElementsByClassName('.content-page__image0get');
 
 
         $.ajax({
@@ -16,15 +17,36 @@
 
 
         $.getJSON(loadAPI, function (data) {
-            let imagesGet = [];
             $.each(data, function (key, value) {
-                $('<img>').attr('src', value).appendTo('.content-page__image');
+                $('<img class=".content-page__image-get">').attr('src', value.url,'base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=').attr('data-src', value.thumbnailUrl).appendTo('.content-page__image');
+            });
+        });
+
+        function LazyLoadImage (){
+            for (let i=0; i< imageGet; i++){
+                if (imageGet[i].getAttribute('data-src')){
+                    imageGet[i].setAttribute('src', imageGet[i].getAttribute('data-src') );
+                    imageGet[i].removeAttribute('data-src');
+                }
+            }
+        }
+
+        $(document).ready(function(){
+            $(window).scroll(function(){
+
+                if($(window).scrollTop() + $(window).height() >= $(document).height){
+                    image.slideDown('slow', function(){
+
+                    });
+                }
             });
         });
 
 
-        console.log(loadAPI);
-    };
+
+LazyLoadImage();
+};
 })(jQuery);
 
 $('.content-page').LazyLoad();
+

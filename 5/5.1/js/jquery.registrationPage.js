@@ -53,13 +53,18 @@ $('.container').registrationPage();
 
 
 function postRequest () {
+
     let promise = new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve("result");
         }, 2000);
+
     });
 
     promise.then(result => {
+
+        alert(document.getElementById("login").value);
         alert("You`ve been successfully registered to the website!");
+
     });
 }
