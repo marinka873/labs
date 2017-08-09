@@ -31,16 +31,24 @@
             }
         }
 
-        $(document).ready(function(){
-            $(window).scroll(function(){
+        image.on('sroll', scrollPage);
 
-                if($(window).scrollTop() + $(window).height() >= $(document).height){
-                    image.slideDown('slow', function(){
+        function scrollPage(){
+            let currentHeigth = $(this).children('.content-page__image').height();
 
-                    });
-                }
-            });
-        });
+            if ($(this).scrollTop >= currentHeigth - $(this).height() - 100){
+                $(this).unbind('scroll');
+            }
+        }
+
+        // $(document).ready(function(){
+        //     $(window).scroll(function(){
+        //
+        //         if($(window).scrollTop() + $(window).height() >= $(document).height){
+        //             image.slideDown.show();
+        //         }
+        //     });
+        // });
 
 
 

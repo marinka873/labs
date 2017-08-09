@@ -2,7 +2,7 @@
     'use strict';
 
 
-    $.fn.registrationPage = function () {
+    $.fn.DragImage = function () {
         let buttonPost = $('.container__button');
         let dropArea = $('.container-dropzone');
 
@@ -49,7 +49,7 @@
 };
 })(jQuery);
 
-$('.container').registrationPage();
+$('.container').DragImage();
 
 
 function postRequest () {
