@@ -1,2 +1,1 @@
-
-console.log('Webpack works!');
+alert('Webpack');

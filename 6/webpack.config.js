@@ -1,25 +1,26 @@
-let webpack = require('webpack');
-let  path = require('path');
+let webpack = require ('webpack');
+let path = require('path');
 
-let BUILD_DIR = path.resolve(__dirname, 'src/public');
-let APP_DIR = path.resolve(__dirname, 'src/app/js');
+let build_dir = path.resolve(__dirname, 'build');
+let src_dir = path.resolve(__dirname, 'src');
+
 
 let config = {
-    entry: APP_DIR + './index.js',
-    output: {
-        path: BUILD_DIR,
+    entry: src_dir + '/app/js/index.js',
+    output:{
+        path: build_dir + '/app',
         filename: 'bundle.js',
+        publicPath: '/app/js'
     },
     module: {
-       rules: [
-           {
-               test: /\.js$/,
-               exclude: /(node_modules)/,
-               use: {
-                   loader: 'babel-loader'
-               }
-           }
-       ]
+        loaders: [{
+                test: /\.js?$/,
+                include: 'src/app/js/index.js',
+                loader: 'babel-loader',
+                query: {
+                    presets: ['react', 'es2015', 'stage-2']
+                }
+            }]
     }
 };
 
