@@ -1,4 +1,3 @@
-let webpack = require ('webpack');
 let path = require('path');
 
 let build_dir = path.resolve(__dirname, 'build');
