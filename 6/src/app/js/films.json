@@ -1,0 +1,350 @@
+[
+  {
+    "idFilm": "1",
+    "filmName": "Minions",
+    "filmType": "Animation",
+    "filmImage": "./image/minions.jpg",
+    "filmDescription": "Minions Stuart, Kevin, and Bob are recruited by Scarlet Overkill, a supervillain who, alongside her inventor husband Herb, hatches a plot to take over the world."
+  },
+  {
+    "idFilm": "2",
+    "filmName": "Fantastic Beasts and Where to Find Them",
+    "filmType": "Fantasy",
+    "filmImage": "./image/Fantastic-Beasts.jpg",
+    "filmDescription": "The adventures of writer Newt Scamander in New York's secret community of witches and wizards seventy years before Harry Potter reads his book in school."
+  },
+  {
+    "idFilm": "3",
+    "filmName": "The LEGO Batman Movie",
+    "filmType": "Animation",
+    "filmImage": "./image/lego-Batman.jpg",
+    "filmDescription": "A cooler-than-ever Bruce Wayne must deal with the usual suspects as they plan to rule Gotham City, while discovering that he has accidentally adopted a teenage orphan who wishes to become his sidekick."
+  },
+  {
+    "idFilm": "4",
+    "filmName": "The Secret Life of Pets",
+    "filmType": "Animation",
+    "filmImage": "./image/secret-life-pets.jpg",
+    "filmDescription": "The quiet life of a terrier named Max is upended when his owner takes in Duke, a stray whom Max instantly dislikes."
+  },
+  {
+    "idFilm": "5",
+    "filmName": "Zootopia",
+    "filmType": "Animation",
+    "filmImage": "./image/zootopia.jpg",
+    "filmDescription": "In a city of anthropomorphic animals, a rookie bunny cop and a cynical con artist fox must work together to uncover a conspiracy."
+  },
+  {
+    "idFilm": "6",
+    "filmName": "Frozen",
+    "filmType": "Animation",
+    "filmImage": "./image/frozen.jpg",
+    "filmDescription": "When the newly crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister, Anna, teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition."
+  },
+  {
+    "idFilm": "7",
+    "filmName": "The Incredibles",
+    "filmType": "Animation",
+    "filmImage": "./image/incredibles.jpg",
+    "filmDescription": "A family of undercover superheroes, while trying to live the quiet suburban life, are forced into action to save the world."
+  },
+  {
+    "idFilm": "8",
+    "filmName": "The Dark Tower",
+    "filmType": "Action",
+    "filmImage": "./image/dark-tower.jpg",
+    "filmDescription": "The last Gunslinger, Roland Deschain, has been locked in an eternal battle with Walter O'Dim, also known as the Man in Black, determined to prevent him from toppling the Dark Tower, which holds the universe together. With the fate of the worlds at stake, good and evil will collide in the ultimate battle as only Roland can defend the Tower from the Man in Black."
+  },
+  {
+    "idFilm": "9",
+    "filmName": "Dunkirk",
+    "filmType": "Action",
+    "filmImage": "./image/dunkirk.jpg",
+    "filmDescription": "Allied soldiers from Belgium, the British Empire and France are surrounded by the German army and evacuated during a fierce battle in World War II."
+  },
+  {
+    "idFilm": "10",
+    "filmName": "Wonder Woman",
+    "filmType": "Action",
+    "filmImage": "./image/wonder-woman.jpg",
+    "filmDescription": "Before she was Wonder Woman, she was Diana, princess of the Amazons, trained warrior. When a pilot crashes and tells of conflict in the outside world, she leaves home to fight a war, discovering her full powers and true destiny"
+  },
+  {
+    "idFilm": "11",
+    "filmName": "The Mummy",
+    "filmType": "Action",
+    "filmImage": "./image/mummy.jpg",
+    "filmDescription": "An ancient princess is awakened from her crypt beneath the desert, bringing with her malevolence grown over millennia, and terrors that defy human comprehension."
+  },
+  {
+    "idFilm": "12",
+    "filmName": "Guardians of the Galaxy Vol. 2",
+    "filmType": "Action",
+    "filmImage": "./image/guardians-of-the-galaxy.jpg",
+    "filmDescription": "The Guardians must fight to keep their newfound family together as they unravel the mystery of Peter Quill's true parentage."
+  },
+  {
+    "idFilm": "13",
+    "filmName": "The Lost City of Z",
+    "filmType": "Action",
+    "filmImage": "./image/lost-city-of-z.jpg",
+    "filmDescription": "A true-life drama, centering on British explorer Col. Percival Fawcett, who disappeared while searching for a mysterious city in the Amazon in the 1920s."
+  },
+  {
+    "idFilm": "14",
+    "filmName": "Kong: Skull Island",
+    "filmType": "Adventure",
+    "filmImage": "./image/kong.jpg",
+    "filmDescription": "A team of scientists explore an uncharted island in the Pacific, venturing into the domain of the mighty Kong, and must fight to escape a primal Eden."
+  },
+  {
+    "idFilm": "15",
+    "filmName": "Suicide Squad",
+    "filmType": "Action",
+    "filmImage": "./image/suicide-squad,jpg",
+    "filmDescription": "A secret government agency recruits some of the most dangerous incarcerated super-villains to form a defensive task force. Their first mission: save the world from the apocalypse."
+  },
+  {
+    "idFilm": "16",
+    "filmName": "Doctor Strange",
+    "filmType": "Adventure",
+    "filmImage": "./image/doctor-strange.jpg",
+    "filmDescription": "While on a journey of physical and spiritual healing, a brilliant neurosurgeon is drawn into the world of the mystic arts."
+  },
+  {
+    "idFilm": "17",
+    "filmName": "Pirates of the Caribbean: Dead Men Tell No Tales ",
+    "filmType": "Adventure",
+    "filmImage": "./image/pitates-of-the-carribean.jpg",
+    "filmDescription": "Captain Jack Sparrow searches for the trident of Poseidon while being pursued by an undead sea captain and his crew."
+  },
+  {
+    "idFilm": "18",
+    "filmName": "Justice League",
+    "filmType": "Fantasy",
+    "filmImage": "./image/justice-league.jpg",
+    "filmDescription": "Fueled by his restored faith in humanity and inspired by Superman's selfless act, Bruce Wayne enlists the help of his newfound ally, Diana Prince, to face an even greater enemy."
+  },
+  {
+    "idFilm": "19",
+    "filmName": "Beauty and the Beast",
+    "filmType": "Musical",
+    "filmImage": "./image/beauty-and-the-beast.jpg",
+    "filmDescription": "An adaptation of the fairy tale about a monstrous-looking prince and a young woman who fall in love."
+  },
+  {
+    "idFilm": "20",
+    "filmName": "A Ghost Story",
+    "filmType": "Drama",
+    "filmImage": "./image/ghost-story.jpg",
+    "filmDescription": "In this singular exploration of legacy, love, loss, and the enormity of existence, a recently deceased, white-sheeted ghost returns to his suburban home to try to reconnect with his bereft wife."
+  },
+  {
+    "idFilm": "21",
+    "filmName": "Harry Potter and the Sorcerer's Stone",
+    "filmType": "Fantasy",
+    "filmImage": "./image/harry-potter-and-the-sorcerer`s-stone.jpg",
+    "filmDescription": "Rescued from the outrageous neglect of his aunt and uncle, a young boy with a great destiny proves his worth while attending Hogwarts School of Witchcraft and Wizardry."
+  },
+  {
+    "idFilm": "22",
+    "filmName": "Miss Peregrine's Home for Peculiar Children",
+    "filmType": "Family",
+    "filmImage": "./image/miss-peregrines-home.jpg",
+    "filmDescription": "When Jacob discovers clues to a mystery that stretches across time, he finds Miss Peregrine's Home for Peculiar Children. But the danger deepens after he gets to know the residents and learns about their special powers."
+  },
+  {
+    "idFilm": "23",
+    "filmName": "Goodbye Christopher Robin",
+    "filmType": "Biography",
+    "filmImage": "./image/christopher-robin.jpg",
+    "filmDescription": "A behind-the-scenes look at the life of author A.A. Milne and the creation of the Winnie the Pooh stories inspired by his son C.R. Milne."
+  },
+  {
+    "idFilm": "24",
+    "filmName": "Jumanji: Welcome to the Jungle",
+    "filmType": "Adventure",
+    "filmImage": "./image/jumanji.jpg",
+    "filmDescription": "In a brand new Jumanji adventure, four high school kids discover an old video game console and are drawn into the game's jungle setting, literally becoming the adult avatars they chose. What they discover is that you don't just play Jumanji - you must survive it. To beat the game and return to the real world, they'll have to go on the most dangerous adventure of their lives, discover what Alan Parrish left 20 years ago, and change the way they think about themselves - or they'll be stuck in the game forever, to be played by others without break."
+  },
+  {
+    "idFilm": "25",
+    "filmName": "Unbroken",
+    "filmType": "Biography",
+    "filmImage": "./image/unbroken.jpg",
+    "filmDescription": "After a near-fatal plane crash in WWII, Olympian Louis Zamperini spends a harrowing 47 days in a raft with two fellow crewmen before he's caught by the Japanese navy and sent to a prisoner-of-war camp."
+  },
+  {
+    "idFilm": "26",
+    "filmName": "Logan",
+    "filmType": "Drama",
+    "filmImage": "./image/logan.jpg",
+    "filmDescription": "In the near future, a weary Logan cares for an ailing Professor X, somewhere on the Mexican border. However, Logan's attempts to hide from the world, and his legacy, are upended when a young mutant arrives, pursued by dark forces."
+  },
+  {
+    "idFilm": "27",
+    "filmName": "Flatliners",
+    "filmType": "Horror",
+    "filmImage": "./image/flatliners.jpg",
+    "filmDescription": "Five medical students, obsessed by what lies beyond the confines of life, embark on a daring experiment: by stopping their hearts for short periods, each triggers a near-death experience - giving them a firsthand account of the afterlife."
+  },
+  {
+    "idFilm": "28",
+    "filmName": "Passengers",
+    "filmType": "Romance",
+    "filmImage": "./image/passengers.jpg",
+    "filmDescription": "A spacecraft traveling to a distant colony planet and transporting thousands of people has a malfunction in its sleep chambers. As a result, two passengers are awakened 90 years early."
+  },
+  {
+    "idFilm": "29",
+    "filmName": "Titanic",
+    "filmType": "Romance",
+    "filmImage": "./image/titanic.jpg",
+    "filmDescription": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic."
+  },
+  {
+    "idFilm": "30",
+    "filmName": "Detroit",
+    "filmType": "History",
+    "filmImage": "./image/detroit.jpg",
+    "filmDescription": "Amidst the chaos of the Detroit Rebellion, with the city under curfew and as the Michigan National Guard patrolled the streets, three young African American men were murdered at the Algiers Motel."
+  },
+  {
+    "idFilm": "31",
+    "filmName": "Schindler's List",
+    "filmType": "History",
+    "filmImage": "./image/shidlersList.jpg",
+    "filmDescription": "In German-occupied Poland during World War II, Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazi Germans."
+  },
+  {
+    "idFilm": "32",
+    "filmName": "The Battleship Island",
+    "filmType": "Drama",
+    "filmImage": "./image/battleship-island..jpg",
+    "filmDescription": "During the Japanese colonial era, roughly 400 Korean people, who were forced onto Battleship Island to mine for coal, attempt to escape."
+  },
+  {
+    "idFilm": "33",
+    "filmName": "The Infiltrator",
+    "filmType": "Biography",
+    "filmImage": "./image/infiltrator.jpg",
+    "filmDescription": "A U.S. Customs official uncovers a money laundering scheme involving Colombian drug lord Pablo Escobar."
+  },
+  {
+    "idFilm": "34",
+    "filmName": "Sully",
+    "filmType": "Biography",
+    "filmImage": "./image/sully.jpg",
+    "filmDescription": "The story of Chesley Sullenberger, an American pilot who became a hero after landing his damaged plane on the Hudson River in order to save the flight's passengers and crew."
+  },
+  {
+    "idFilm": "35",
+    "filmName": "Wind River",
+    "filmType": "Crime",
+    "filmImage": "./image/wind-river.jpg",
+    "filmDescription": "An FBI agent teams with a town's veteran game tracker to investigate a murder that occurred on a Native American reservation."
+  },
+  {
+    "idFilm": "36",
+    "filmName": "John Wick: Chapter 2",
+    "filmType": "Crime",
+    "filmImage": "./image/john-wick.jpg",
+    "filmDescription": "After returning to the criminal underworld to repay a debt, John Wick discovers that a large bounty has been put on his life."
+  },
+
+  {
+    "idFilm": "37",
+    "filmName": "Contratiempo",
+    "filmType": "Crime",
+    "filmImage": "./image/contratiempo.jpg",
+    "filmDescription": "A young businessman faces a lawyer trying to prove his innocence by the assassination of his lover."
+  },
+
+  {
+    "idFilm": "38",
+    "filmName": "Annabelle: Creation",
+    "filmType": "Mystery",
+    "filmImage": "./image/Annabelle.jpg",
+    "filmDescription": "Several years after the tragic death of their little girl, a dollmaker and his wife welcome a nun and several girls from a shuttered orphanage into their home, soon becoming the target of the dollmaker's possessed creation, Annabelle."
+  },
+
+  {
+    "idFilm": "39",
+    "filmName": "Arrival",
+    "filmType": "Mystery",
+    "filmImage": "./image/arrival.jpg",
+    "filmDescription": "When twelve mysterious spacecraft appear around the world, linguistics professor Louise Banks is tasked with interpreting the language of the apparent alien visitors."
+  },
+
+  {
+    "idFilm": "40",
+    "filmName": "Leatherface",
+    "filmType": "Horror",
+    "filmImage": "./image/leatherface.jpg",
+    "filmDescription": "A teenage Leatherface escapes from a mental hospital with three other inmates, kidnapping a young nurse and taking her on a road trip from hell while being pursued by an equally deranged lawman out for revenge."
+  },
+
+  {
+    "idFilm": "42",
+    "filmName": "The Dark Knight",
+    "filmType": "Crime",
+    "filmImage": "./image/dark-knight.jpg",
+    "filmDescription": "When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham, the Dark Knight must accept one of the greatest psychological and physical tests of his ability to fight injustice"
+  },
+  {
+    "idFilm": "43",
+    "filmName": "True Detective",
+    "filmType": "Crime",
+    "filmImage": "./image/true-detective.jpg",
+    "filmDescription": "Seasonal anthology series in which police investigations unearth the personal and professional secrets of those involved, both within and outside the law."
+  },
+  {
+    "idFilm": "44",
+    "filmName": "Train to Busan",
+    "filmType": "Drama",
+    "filmImage": "./image/train-busan.jpg",
+    "filmDescription": "While a zombie virus breaks out in South Korea, passengers struggle to survive on the train from Seoul to Busan."
+  },
+  {
+    "idFilm": "45",
+    "filmName": "The Hobbit: The Battle of the Five Armies",
+    "filmType": "Adventure",
+    "filmImage": "./image/hobbit.jpg",
+    "filmDescription": "Bilbo and Company are forced to engage in a war against an array of combatants and keep the Lonely Mountain from falling into the hands of a rising darkness."
+  },
+  {
+    "idFilm": "46",
+    "filmName": "Super 8",
+    "filmType": "Sci-Fi",
+    "filmImage": "./image/super8.jpg",
+    "filmDescription": "During the summer of 1979, a group of friends witness a train crash and investigate subsequent unexplained events in their small town."
+  },
+  {
+    "idFilm": "47",
+    "filmName": "Spider-Man: Homecoming",
+    "filmType": "Sci-Fi",
+    "filmImage": "./image/spider-man.jpg",
+    "filmDescription": "Peter Parker, with the help of his mentor Tony Stark, tries to balance his life as an ordinary high school student in New York City while fighting crime as his superhero alter ego Spider-Man when a new threat emerges."
+  },
+  {
+    "idFilm": "48",
+    "filmName": "Wonder",
+    "filmType": "Drama",
+    "filmImage": "./image/wonder.jpg",
+    "filmDescription": "Based on the New York Times bestseller, WONDER tells the incredibly inspiring and heartwarming story of August Pullman, a boy with facial differences who enters fifth grade, attending a mainstream elementary school for the first time."
+  },
+  {
+    "idFilm": "49",
+    "filmName": "The Boss Baby",
+    "filmType": "Animation",
+    "filmImage": "./image/boss-baby.jpg",
+    "filmDescription": "A suit-wearing, briefcase-carrying baby pairs up with his 7-year old brother to stop the dastardly plot of the CEO of Puppy Co."
+  },
+  {
+    "idFilm": "50",
+    "filmName": "Kingsman: The Secret Service",
+    "filmType": "Adventure",
+    "filmImage": "./image/kingsman.jpg",
+    "filmDescription": "A spy organization recruits an unrefined, but promising street kid into the agency's ultra-competitive training program, just as a global threat emerges from a twisted tech genius."
+  }
+]
