@@ -15,9 +15,10 @@ let config = {
     module: {
         loaders: [{
                 test: /\.js?$/,
-                include: 'src/app/js/index.js',
+                include: src_dir,
+                exclude: /node_modules/,
                 loader: 'babel-loader',
-                query: {
+            query: {
                     presets: ['react', 'es2015', 'stage-2']
                 }
             }]
