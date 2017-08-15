@@ -18,4 +18,3 @@ ReactDom.render(
     document.getElementById('registration')
 );
 
-
