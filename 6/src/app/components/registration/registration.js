@@ -45,6 +45,7 @@ store.dispatch({type: 'user', payload: 'User name'});
 
 
 
+
 const addEventButton = document.querySelector('.button');
     if (event){
         addEventButton.addEventListener('click', () => {
