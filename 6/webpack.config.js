@@ -5,11 +5,11 @@ let src_dir = path.resolve(__dirname, 'src');
 
 
 let config = {
-    entry: src_dir + '/app/js/index.js',
+    entry: src_dir + '/app/index.js',
     output:{
         path: build_dir + '/app',
         filename: 'bundle.js',
-        publicPath: '/app/js'
+        publicPath: '/app'
     },
     module: {
         loaders: [{

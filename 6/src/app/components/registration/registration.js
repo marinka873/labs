@@ -1,12 +1,10 @@
 import React from 'react';
-import ReactDom from 'react-dom';
-
-console.log('react', React);
+import ReactDOM from 'react-dom';
 
 class Registration extends React.Component{
     render(){
         return <div className="container-registration">
-        <h1>Login</h1>
+            <h1>Login</h1>
             <input type="text" placeholder="Login"/>
             <br/>
             <input type="password" placeholder="Password"/>
@@ -16,8 +14,7 @@ class Registration extends React.Component{
     }
 }
 
-ReactDom.render(
-    <Registration/>,
-    document.getElementById('registration')
-);
+export default Registration;
 
+ReactDOM.render(<Registration/>,
+    document.getElementById('registration'));
