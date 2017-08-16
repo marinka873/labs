@@ -8,9 +8,9 @@ console.log('react', React);
 
 class App extends React.Component{
     render(){
-        return <div>
-        <Registration/>
-        </div>
+        return (
+                <Registration/>)
+
     }
 }
 
