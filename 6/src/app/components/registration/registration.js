@@ -17,8 +17,18 @@ class Registration extends React.Component{
         localStorage.setItem(user.keyEmail, userEmail);
         localStorage.setItem(user.keyPassword, userPassword);
 
-        console.log('email: ', userEmail);
-        console.log('password', userPassword);
+
+        let userLocal = () => {
+            if (localStorage.getItem(user.keyEmail) === null){
+                console.log('Please register');
+            } else {
+                console.log('OK REGISTER');
+            }
+        };
+userLocal();
+
+        console.log(localStorage.getItem(userEmail));
+        console.log(localStorage.getItem(userPassword));
 
 }
 
@@ -42,35 +52,3 @@ export default Registration;
 
 ReactDOM.render(<Registration/>,
     document.getElementById('registration'));
-
-
-
-
-// function getUser(state = [], action){
-//     if(action.type === 'user'){
-//         return[
-//             ...state,
-//             action.payload
-//         ];
-//     }
-//     return state;
-// }
-//
-// const store = createStore(getUser);
-//
-// store.subscribe( () => {
-//     console.log('User', store.getState());
-// });
-//
-// store.dispatch({type: 'user', payload: 'User name'});
-//
-//
-//
-//
-// const addEventButton = document.querySelector('.button');
-//     if (event){
-//         addEventButton.addEventListener('click', () => {
-//             const userName = document.querySelector('.login').value;
-//             console.log('user name ');
-//     });
-// }
