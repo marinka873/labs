@@ -15,8 +15,7 @@ let config = {
     plugins: [
         new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoEmitOnErrorsPlugin(),
-        new webpack.ProvidePlugin()
+        new webpack.NoEmitOnErrorsPlugin()
     ],
     module: {
         loaders: [{
@@ -30,7 +29,11 @@ let config = {
             },
             {
                 test: /\.scss$/,
-                loader: 'webpack-sass'
+                use: [
+                    {loader: 'webpack-sass'},
+                    {loader: 'style-loader'},
+                    {loader: 'css-loader'}
+                ]
             }]
     }
 };

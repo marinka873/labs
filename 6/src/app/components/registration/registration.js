@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Form, Control, actions} from 'react-redux-form';
 
+
+
 class Registration extends React.Component{
 
     addUser(event){

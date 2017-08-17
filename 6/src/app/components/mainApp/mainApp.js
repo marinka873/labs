@@ -22,3 +22,4 @@ ReactDom.render(
     document.getElementById('registration')
 );
 
+export default mainApp;
