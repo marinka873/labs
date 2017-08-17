@@ -15,7 +15,10 @@ let config = {
     plugins: [
         new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoEmitOnErrorsPlugin()
+        new webpack.NoEmitOnErrorsPlugin(),
+        new webpack.DefinePlugin({
+            'process.env.NODE_ENV': JSON.stringify('development')
+        })
     ],
     module: {
         loaders: [{
@@ -32,8 +35,11 @@ let config = {
                 use: [
                     {loader: 'webpack-sass'},
                     {loader: 'style-loader'},
-                    {loader: 'css-loader'}
+                    {loader: 'webpack-sass'},
                 ]
+            }, {
+            test: /\.json$/,
+                loader: 'json-loader'
             }]
     }
 };

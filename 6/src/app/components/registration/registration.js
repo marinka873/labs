@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Form, Control, actions} from 'react-redux-form';
 
-
+import'./Registration.scss';
 
 class Registration extends React.Component{
 

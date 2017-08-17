@@ -1,20 +1,28 @@
 import React from 'react';
-import ReactDom from 'react-dom';
-import {Router, Route, IndexRoute, browserHistory, hashHistory} from 'react-router';
+import ReactDOM from 'react-dom';
+import {BrowserRouter as Router, Route, HashRouter} from 'react-router-dom';
 
 import Registration from "./components/registration/registration";
-// import mainApp from './components/mainApp/mainApp';
+import FilmList from "./components/filmList/filmList";
+
+
+
 
 class App extends React.Component{
     render(){
-        return ( <div>
-            <Registration />
-        </div>)
+
+        return (
+            <div>
+                <Registration />
+
+        </div>
+
+        )
 
     }
 }
 
-ReactDom.render(
+ReactDOM.render(
     <App />,
     document.getElementById('registration')
 );
