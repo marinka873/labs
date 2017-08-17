@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import './addComment.scss';
+
 class addComment extends React.Component{
 
     addComment(event){
@@ -21,11 +23,11 @@ class addComment extends React.Component{
     }
 
     render(){
-        return <div className="container-message">
-            <form className="container-message__form" onSubmit={this.addComment.bind(this)}>
-                <input type="text" placeholder="Message text" className="container-message__form__input-message" ref="comment"/>
+        return <div className="container-comment">
+            <form className="container-comment__form" onSubmit={this.addComment.bind(this)}>
+                <input type="text" placeholder="Message text" className="container-comment__form__input-comment" ref="comment"/>
                 <br/>
-                <button className="container-message__form__button">Send message</button>
+                <button className="container-comment__form__button">Send message</button>
             </form>
         </div>
     }
@@ -35,4 +37,5 @@ ReactDOM.render(
   <addComment />,
     document.querySelector('comments')
 );
-export default postMessage;
+
+export default addComment;
