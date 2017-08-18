@@ -9,7 +9,6 @@ import './mainStyle.scss';
 
 
 
-
 const store = applicationStore();
 
 class App extends React.Component{
