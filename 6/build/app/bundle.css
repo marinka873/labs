@@ -1,3 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans|Faustina);* {
+  font: Droid Sans, Faustina, sans-serif;
+  font-size: 18px; }
+
+body {
+  background-color: darkgray; }
 .container-registration__form__button {
   margin-top: 1%;
   padding: 0.5em;

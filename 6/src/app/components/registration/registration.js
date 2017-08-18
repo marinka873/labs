@@ -26,7 +26,7 @@ class Registration extends React.Component{
                 console.log('OK REGISTER');
             }
         };
-userLocal();
+        userLocal();
 
         console.log(localStorage.getItem(userEmail));
         console.log(localStorage.getItem(userPassword));

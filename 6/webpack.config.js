@@ -35,8 +35,7 @@ let config = {
                 query: {
                     presets: ['react', 'es2015', 'stage-2']
                 }
-            },
-            {
+            }, {
                 test: /\.scss$/,
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
@@ -45,6 +44,11 @@ let config = {
             }, {
             test: /\.json$/,
                 loader: 'json-loader'
+            }, {
+            test: /\.jpg$/,
+                loader: 'file-loader',
+                options: { }
+
             }]
     }
 };
