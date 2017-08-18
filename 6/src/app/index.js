@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter as Router, Route, HashRouter} from 'react-router-dom';
 
 import Registration from "./components/registration/registration";
-import FilmList from "./components/filmList/filmList";
+
 
 
 
@@ -14,7 +14,6 @@ class App extends React.Component{
         return (
             <div>
                 <Registration />
-
         </div>
 
         )
