@@ -1,12 +1,12 @@
+import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter as Router, Route, HashRouter} from 'react-router-dom';
 
 import Registration from "./components/registration/registration";
+import applicationStore from "./store/applicationStore";
+import './mainStyle.scss';
 
-
-
-
+const store = applicationStore();
 
 class App extends React.Component{
     render(){

@@ -38,7 +38,7 @@ userLocal();
             <div className="container-registration">
                 <h1>Login:</h1>
                 <form onSubmit={this.addUser.bind(this)} className="container-registration__form">
-                    <input type="email" ref="email" placeholder="Login" className="container-registration__form__input"/>
+                    <input type="email" ref="email" placeholder="Email" className="container-registration__form__input"/>
                     <br/>
                     <input type="password" ref="password" placeholder="Password" className="container-registration__form__input"/>
                     <br/>

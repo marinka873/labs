@@ -1,5 +1,9 @@
+'use strict';
+
 let webpack = require('webpack');
 let path = require('path');
+let HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 let build_dir = path.resolve(__dirname, 'build');
 let src_dir = path.resolve(__dirname, 'src');
@@ -13,6 +17,8 @@ let config = {
         publicPath: '/app'
     },
     plugins: [
+        new ExtractTextPlugin('bundle.css'),
+        new HtmlWebpackPlugin(),
         new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoEmitOnErrorsPlugin(),
@@ -32,11 +38,10 @@ let config = {
             },
             {
                 test: /\.scss$/,
-                use: [
-                    {loader: 'webpack-sass'},
-                    {loader: 'style-loader'},
-                    {loader: 'webpack-sass'},
-                ]
+                use: ExtractTextPlugin.extract({
+                    fallback: 'style-loader',
+                    use: ['css-loader', 'sass-loader']
+                })
             }, {
             test: /\.json$/,
                 loader: 'json-loader'
