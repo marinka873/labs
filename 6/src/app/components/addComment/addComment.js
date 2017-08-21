@@ -33,9 +33,4 @@ class addComment extends React.Component{
     }
 }
 
-ReactDOM.render(
-  <addComment />,
-    document.querySelector('comments')
-);
-
 export default addComment;

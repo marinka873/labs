@@ -7,9 +7,5 @@ class sortfilm extends React.Component{
     }
 }
 
-ReactDOM.render(
-    <sortFilm />,
-    document.querySelector('sortFilm')
-);
 
 export default sortfilm;

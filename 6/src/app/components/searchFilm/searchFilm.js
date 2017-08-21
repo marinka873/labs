@@ -9,9 +9,4 @@ class searchFilm extends React.Component{
 }
 
 
-ReactDOM.render(
-    <serchFilm />,
-    document.querySelector('search')
-);
-
 export default searchFilm;

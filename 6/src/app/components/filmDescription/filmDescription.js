@@ -8,8 +8,5 @@ class filmDescription extends React.Component{
     }
 }
 
-ReactDOM.render(
-    <filmDescription />
-);
 
 export default filmDescription;

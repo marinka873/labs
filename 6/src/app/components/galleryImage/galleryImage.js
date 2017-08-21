@@ -7,9 +7,5 @@ class galleryImage extends React.Component{
     }
 }
 
-ReactDOM.render(
-    <galleryImage />,
-    document.querySelector('gallery')
-);
 
 export default galleryImage;

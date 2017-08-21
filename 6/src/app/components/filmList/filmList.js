@@ -8,7 +8,7 @@ import {FILM_LIST} from "../../actions/filmsAction";
 
 
 
-class FilmList extends React.Component{
+class movieList extends React.Component{
 
     componentWillMount(){
     fetch(FILM_LIST)
@@ -26,7 +26,4 @@ class FilmList extends React.Component{
     }
 }
 
-ReactDOM.render(
-    <FilmList/>
-);
-export default FilmList;
+export default movieList;

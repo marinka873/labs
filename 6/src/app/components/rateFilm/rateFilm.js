@@ -8,8 +8,5 @@ class rateFilm extends React.Component{
     }
 }
 
-ReactDOM.render(
-    <rateFilm />
-);
 
 export default rateFilm;
