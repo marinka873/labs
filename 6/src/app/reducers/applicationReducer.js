@@ -1,8 +1,9 @@
 import {combineReducers} from 'redux';
 
+import usersReducer from './userReducer';
+import filmReducer from './filmReducer';
 
-const applicationReducer = combineReducers({
-
+export default combineReducers({
+    usersReducer,
+    filmReducer
 });
-
-export default applicationReducer;
