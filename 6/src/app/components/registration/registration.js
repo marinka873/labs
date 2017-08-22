@@ -56,7 +56,7 @@ class Registration extends React.Component{
 }
 
     render(){
-        return ( <BrowserRouter history={history}>
+        return (
             <div className="container-registration">
                 <h1>Login:</h1>
                 <form onSubmit={this.addUser.bind(this)} className="container-registration__form">
@@ -67,7 +67,6 @@ class Registration extends React.Component{
                     <button type="submit" className="container-registration__form__button"> Submit</button>
                 </form>
                         </div>
-            </BrowserRouter>
         );
     }
 }

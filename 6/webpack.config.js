@@ -48,7 +48,6 @@ let config = {
             test: /\.jpg$/,
                 loader: 'file-loader',
                 options: { }
-
             }]
     }
 };

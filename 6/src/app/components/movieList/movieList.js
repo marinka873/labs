@@ -3,18 +3,13 @@ import ReactDOM from 'react-dom';
 import thunk from 'redux-thunk';
 import {applyMiddleware} from 'redux';
 
-import {FILM_LIST} from "../../actions/filmsAction";
+import {FILM_LIST} from "../../actions/movieAction";
 
 
 
 
 class movieList extends React.Component{
 
-    componentWillMount(){
-    fetch(FILM_LIST)
-        .then(response => response.json())
-        .then(data => {console.log(data)})
-    }
 
     render(){
         return(
