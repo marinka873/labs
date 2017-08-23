@@ -3,7 +3,6 @@
 let webpack = require('webpack');
 let path = require('path');
 let HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 let build_dir = path.resolve(__dirname, 'build');
 let src_dir = path.resolve(__dirname, 'src');
@@ -17,7 +16,6 @@ let config = {
         publicPath: '/app'
     },
     plugins: [
-        new ExtractTextPlugin('bundle.css'),
         new HtmlWebpackPlugin(),
         new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.HotModuleReplacementPlugin(),
@@ -36,11 +34,8 @@ let config = {
                     presets: ['react', 'es2015', 'stage-2']
                 }
             }, {
-                test: /\.scss$/,
-                use: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: ['css-loader', 'sass-loader']
-                })
+                test: /\.css$/,
+                    use: ['css-loader', 'style-loader']
             }, {
             test: /\.json$/,
                 loader: 'json-loader'

@@ -10,8 +10,6 @@ import {Route, Switch, BrowserRouter} from 'react-router-dom';
 import Registration from "./components/registration/registration";
 import movieList from './components/movieList/movieList';
 import applicationReducer from './reducers/applicationReducer';
-import './mainStyle.scss';
-
 
 const store = createStore(
     applicationReducer,
@@ -19,6 +17,7 @@ const store = createStore(
         applyMiddleware(thunk)
     )
 );
+
 
 
 class App extends React.Component {
@@ -44,3 +43,4 @@ ReactDOM.render((
 
 
 console.log('React application main page');
+console.log('Store', store);
