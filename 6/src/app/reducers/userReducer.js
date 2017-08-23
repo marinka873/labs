@@ -4,8 +4,6 @@ const initialState = [];
 
 export default function usersReducer (state = initialState, action = {}){
     switch (action.type){
-        // case 'TEST':
-        //     return [...state, action.payload];
         case USER_SIGNUP:
             return action.payload;
             break;
