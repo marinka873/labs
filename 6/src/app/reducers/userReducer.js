@@ -1,16 +1,18 @@
-import {USER_IS_LOGIN, USER_SIGNUP} from "../actions/userAction";
+import {USER_SIGNUP, USER_LOGOUT} from "../constants/userConstans";
 
-const initialState = [];
+const initialState = {
+    login: null,
+    password: null
+};
 
-export default function usersReducer (state = initialState, action = {}){
-    switch (action.type){
+export default function usersReducer(state = initialState, action) {
+    switch (action.type) {
         case USER_SIGNUP:
-            return action.payload;
+            return {...state, login: action.login, password: action.password};
             break;
-        // case USER_LOGOUT:
-        //     return initialState;
-        //     break;
-
+        case USER_LOGOUT:
+            return initialState;
+            break;
         default:
             return state;
             break;

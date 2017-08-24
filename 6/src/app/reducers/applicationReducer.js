@@ -4,6 +4,6 @@ import usersReducer from './userReducer';
 import movieReducer from './movieReducer';
 
 export default combineReducers({
-    usersReducer,
-    movieReducer
+   user: usersReducer,
+   movie: movieReducer
 });

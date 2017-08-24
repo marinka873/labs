@@ -7,6 +7,7 @@ let HtmlWebpackPlugin = require('html-webpack-plugin');
 let build_dir = path.resolve(__dirname, 'build');
 let src_dir = path.resolve(__dirname, 'src');
 
+let JSON = ('/app/movie.json');
 
 let config = {
     entry: src_dir + '/app/index.js',
@@ -19,11 +20,12 @@ let config = {
         new HtmlWebpackPlugin(),
         new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoEmitOnErrorsPlugin(),
-        new webpack.DefinePlugin({
-            'process.env.NODE_ENV': JSON.stringify('development')
-        })
+        new webpack.NoEmitOnErrorsPlugin()
     ],
+
+    resolve: {
+        extensions: [" ", ".js", ".jsx", ".css",".json"]
+    },
     module: {
         loaders: [{
                 test:/\.jsx?$/,
@@ -42,8 +44,15 @@ let config = {
             }, {
             test: /\.jpg$/,
                 loader: 'file-loader',
-                options: { }
+            exclude: /node_modules/,
+            options: { }
+            },{
+            test:  /\.(png|jpg|gif)$/,
+            use: [{
+                loader: 'file-loader',
+                options: {}
             }]
+        }]
     }
 };
 

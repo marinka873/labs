@@ -1,26 +1,26 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import thunk from 'redux-thunk';
-import {applyMiddleware} from 'redux';
-
-import {FILM_LIST} from "../../actions/movieAction";
-
-
-
+import {connect} from 'react-redux';
 
 class movieList extends React.Component{
 
     render(){
         return(
-            <div>
-                <h1>Films list</h1>
-                <div className="container-film">
+            <div className="container-film">
+                <h1>Movie list:</h1>
+                <div className="jumbotron">
+                    <h2>Movie name</h2>
 
                 </div>
             </div>
         )
-
     }
 }
 
-export default movieList;
+const mapStateToProps = (state) => {
+    return {movie : state}
+};
+const mapDispatchToProps = (dispatch) => ({
+
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(movieList);

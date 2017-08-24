@@ -6,10 +6,13 @@ import {createStore, applyMiddleware} from 'redux';
 import thunk from 'redux-thunk';
 import {composeWithDevTools} from 'redux-devtools-extension';
 import {Route, Switch, BrowserRouter} from 'react-router-dom';
+import axios from'axios';
 
 import Registration from "./components/registration/registration";
 import movieList from './components/movieList/movieList';
 import applicationReducer from './reducers/applicationReducer';
+
+import './movie.json';
 
 const store = createStore(
     applicationReducer,
@@ -18,6 +21,17 @@ const store = createStore(
     )
 );
 
+
+
+function getMoviesList() {
+    return axios.get('./app/movie.json')
+        .then((response) => {
+            console.log(response.data);
+
+        })
+}
+
+getMoviesList();
 
 
 class App extends React.Component {
@@ -34,13 +48,8 @@ class App extends React.Component {
     }
 }
 
-
 ReactDOM.render((
     <Provider store={store}>
          <App/>
     </Provider>
  ), document.getElementById('root'));
-
-
-console.log('React application main page');
-console.log('Store', store);

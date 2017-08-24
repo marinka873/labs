@@ -1,26 +1,15 @@
-import axios from 'axios';
-import {USER_LOGOUT, USER_SIGNUP, USER_TEXT} from "../constants/userConstans";
+import {USER_LOGOUT, USER_SIGNUP} from "../constants/userConstans";
 
-
-
-export function userSignup (userInformation){
+export function userSignup (userLogin, userPassword){
     return {
         type: USER_SIGNUP,
-        payload: userInformation
+        login: userLogin,
+        password: userPassword
     }
 }
 
 export function userLogout(){
     return {
         type: USER_LOGOUT
-    }
-}
-
-
-
-export function userText(text) {
-    return{
-        type: USER_TEXT,
-        payload: text
     }
 }
