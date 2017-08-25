@@ -1,18 +1,16 @@
-import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
 import {createStore, applyMiddleware} from 'redux';
 import thunk from 'redux-thunk';
 import {composeWithDevTools} from 'redux-devtools-extension';
-import {Route, Switch, BrowserRouter} from 'react-router-dom';
-import axios from'axios';
+import {Route, Switch, BrowserRouter, Link} from 'react-router-dom';
 
 import Registration from "./components/registration/registration";
 import movieList from './components/movieList/movieList';
 import applicationReducer from './reducers/applicationReducer';
 
-import './movie.json';
+import filmListJSON from './movie.json';
 
 const store = createStore(
     applicationReducer,
@@ -21,18 +19,12 @@ const store = createStore(
     )
 );
 
+function getMoviesListJSON() {
+    console.log('file json', filmListJSON);
 
-
-function getMoviesList() {
-    return axios.get('./app/movie.json')
-        .then((response) => {
-            console.log(response.data);
-
-        })
 }
 
-getMoviesList();
-
+getMoviesListJSON();
 
 class App extends React.Component {
     render() {

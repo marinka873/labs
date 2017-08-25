@@ -4,15 +4,22 @@ import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 
 import {userSignup} from '../../actions/userAction';
+import movieJSON from '../../movie.json';
+import {setMoviesList} from '../../actions/movieAction';
 
 class Registration extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             email: '',
-            password: ''
+            password: '',
+            filList: []
         };
         this.addUser = this.addUser.bind(this);
+    }
+
+    componentDidMount() {
+     this.props.loadMovie(movieJSON);
     }
 
     handleChangeEmail = (event) => {
@@ -59,26 +66,34 @@ class Registration extends React.Component {
                         <input type="password" placeholder="Password" onChange={this.handleChangePassword}
                                value={this.state.password}/>
                         <br/>
-                        <Link to={`/moviesList`}>
-                        <button type="submit" className="btn btn-primary btn-lg" onClick={this.addUser}>Registration
-                        </button>
+                        <Link to='/movieList'>
+                            <button type="submit" className="btn btn-primary btn-lg" onClick={this.addUser}>Registration
+                            </button>
                         </Link>
                     </fieldset>
                 </form>
+
+                <ul> Movie list:
+                    <Link to="/moviesList">
+                        <li> Movie routing</li>
+                    </Link>
+                </ul>
             </div>
         );
     }
 }
 
-
 Registration.propTypes = {
     userInfo: PropTypes.func.isRequired
+    // loadMovie: PropTypes.func.isRequired
 };
 
 const mapStateToProps = (state) => {
     return {
         login: state.user.login,
-        password: state.user.password
+        password: state.user.password,
+
+        listFilm: state.movie.filList
     }
 };
 
@@ -86,6 +101,11 @@ const mapDispatchToProps = () => {
     return dispatch => ({
         userInfo: (login, password) => {
             dispatch(userSignup(login, password))
+        },
+
+        loadMovie: (movieJSON) => {
+
+            dispatch(setMoviesList(movieJSON))
         }
     })
 };

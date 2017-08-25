@@ -1,34 +1,18 @@
-import axios from 'axios';
+import {SET_MOVIE_LIST} from "../constants/movieConstants";
 
-import getMovieList, {GET_MOVIE_LIST} from '../actions/movieAction';
-import {GET_MOVIE_DESCRIPTION, GET_MOVIE_IMAGE, GET_MOVIE_NAME} from "../constants/movieConstants";
+const initialState = {
+    list: null
+};
 
+export default function movieReducer(state = initialState, action = []){
 
-function getMoviesss() {
-    return axios.get('../movie.json')
-        .then((response) => {
-        return response.data
-            .then(data => {
-               console.log(data)
-            })
-        })
-}
-
-export default function movieReducer(state = [], action = {}){
     switch (action.type){
-        case GET_MOVIE_LIST:
-            return action.payload;
+        case SET_MOVIE_LIST:
+            return [...state,
+                action.list];
             break;
-        case GET_MOVIE_NAME:
-            return action.payload;
+        default:
+            return state;
             break;
-        case GET_MOVIE_DESCRIPTION:
-            return action.payload;
-            break;
-        case GET_MOVIE_IMAGE:
-            return action.payload;
-            break;
-        default: return state;
-        break;
     }
 }

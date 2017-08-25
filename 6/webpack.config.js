@@ -7,8 +7,6 @@ let HtmlWebpackPlugin = require('html-webpack-plugin');
 let build_dir = path.resolve(__dirname, 'build');
 let src_dir = path.resolve(__dirname, 'src');
 
-let JSON = ('/app/movie.json');
-
 let config = {
     entry: src_dir + '/app/index.js',
     output:{
@@ -42,7 +40,7 @@ let config = {
             test: /\.json$/,
                 loader: 'json-loader'
             }, {
-            test: /\.jpg$/,
+            test: /\.(png|jpg|gif)$/,
                 loader: 'file-loader',
             exclude: /node_modules/,
             options: { }
@@ -55,6 +53,5 @@ let config = {
         }]
     }
 };
-
 
 module.exports = config;
