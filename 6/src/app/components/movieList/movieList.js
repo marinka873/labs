@@ -1,16 +1,19 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import PropTypes from 'prop-types';
 
 import Movie from "../movie/movie";
+import {userSignup} from '../../actions/userAction';
+import {setMoviesList} from '../../actions/movieAction';
+import movieJSON from '../../movie.json';
+
 
 class moviesList extends React.Component{
     constructor(props) {
         super(props);
-
     }
 
     componentDidMount() {
-
     }
 
     render(){
@@ -24,6 +27,7 @@ class moviesList extends React.Component{
 }
 
 moviesList.PropTypes ={
+
 };
 
 const mapStateToProps = (state) => {

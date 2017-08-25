@@ -73,11 +73,9 @@ class Registration extends React.Component {
                     </fieldset>
                 </form>
 
-                <ul> Movie list:
                     <Link to="/moviesList">
-                        <li> Movie routing</li>
+                        <h2> Movie  list routing:</h2>
                     </Link>
-                </ul>
             </div>
         );
     }
