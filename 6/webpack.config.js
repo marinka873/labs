@@ -41,16 +41,11 @@ let config = {
                 loader: 'json-loader'
             }, {
             test: /\.(png|jpg|gif)$/,
-                loader: 'file-loader',
+                 loader: 'file-loader',
             exclude: /node_modules/,
             options: { }
-            },{
-            test:  /\.(png|jpg|gif)$/,
-            use: [{
-                loader: 'file-loader',
-                options: {}
-            }]
-        }]
+            }
+        ]
     }
 };
 
