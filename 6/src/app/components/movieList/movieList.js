@@ -15,6 +15,7 @@ class moviesList extends React.Component{
     }
 
     componentDidMount() {
+        this.props.loadMovie(movieJSON)
     }
 
     render(){
@@ -32,7 +33,7 @@ class moviesList extends React.Component{
 }
 
 moviesList.PropTypes ={
-
+    // loadMovie: PropTypes.func.isRequired
 };
 
 const mapStateToProps = (state) => {

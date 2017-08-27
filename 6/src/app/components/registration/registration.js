@@ -73,9 +73,12 @@ class Registration extends React.Component {
                     </fieldset>
                 </form>
 
+                <h4>Current user: {this.props.login}</h4>
+
                     <Link to="/moviesList">
                         <h2> Movie  list routing:</h2>
                     </Link>
+
             </div>
         );
     }
@@ -83,7 +86,6 @@ class Registration extends React.Component {
 
 Registration.propTypes = {
     userInfo: PropTypes.func.isRequired
-    // loadMovie: PropTypes.func.isRequired
 };
 
 const mapStateToProps = (state) => {
@@ -91,7 +93,7 @@ const mapStateToProps = (state) => {
         login: state.user.login,
         password: state.user.password,
 
-        listFilm: state.movie.filList
+        filmList: state.movie.filList
     }
 };
 
