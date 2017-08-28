@@ -4,9 +4,6 @@ import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 
 import {userSignup} from '../../actions/userAction';
-import movieJSON from '../../movie.json';
-
-import {setMoviesList} from '../../actions/movieAction';
 
 class Registration extends React.Component {
     constructor(props) {

@@ -6,13 +6,10 @@ import thunk from 'redux-thunk';
 import {composeWithDevTools} from 'redux-devtools-extension';
 import {Route, Switch, BrowserRouter} from 'react-router-dom';
 
-
 import Registration from "./components/registration/registration";
 import movieList from './components/movieList/movieList';
 import currentMovie from './components/currentMovie/currentMovie';
 import applicationReducer from './reducers/applicationReducer';
-
-import filmListJSON from './movie.json';
 
 const store = createStore(
     applicationReducer,
@@ -20,13 +17,6 @@ const store = createStore(
         applyMiddleware(thunk)
     )
 );
-
-function getMoviesListJSON() {
-    console.log('file json', filmListJSON);
-
-}
-
-getMoviesListJSON();
 
 class App extends React.Component {
     render() {

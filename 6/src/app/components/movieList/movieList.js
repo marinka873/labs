@@ -12,22 +12,26 @@ import movieJSON from '../../movie.json';
 class moviesList extends React.Component{
     constructor(props) {
         super(props);
-        this.state = {
-            filmsList: []
-        };
     }
 
     componentDidMount() {
         this.props.loadMovie(movieJSON);
-
-
     }
 
     render(){
+
         return(
             <div className="container-film">
-
                 <h1>Movie list:</h1>
+
+                {this.props.filmsList.map((filmList) => {
+                    return <div key={filmList.idMovie}>
+
+                         <h2>{filmList.movieName}</h2>
+
+                        <p>{filmList.movieDescription}</p>
+                        </div>
+                })}
 
                 <Link to="/currentMovie">
                     <h2>Select current movie</h2>
@@ -37,13 +41,18 @@ class moviesList extends React.Component{
     }
 }
 
-moviesList.PropTypes ={
-    loadMovie: PropTypes.func.isRequired
+moviesList.defaultProps = {
+    filmsList: []
+};
+
+moviesList.PropTypes = {
+    loadMovie: PropTypes.func.isRequired,
+    filmsList: PropTypes.array.isRequired
 };
 
 const mapStateToProps = (state) => {
     return {
-        filmsList: state.movie.filmsList
+        filmsList: state.movie
     }
 };
 
