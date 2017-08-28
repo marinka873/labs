@@ -3,11 +3,9 @@ import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 
-import currentMovie from '../currentMovie/currentMovie';
-import {userSignup} from '../../actions/userAction';
 import {setMoviesList} from '../../actions/movieAction';
 import movieJSON from '../../movie.json';
-
+import ComponentNavbar from '../navbar/Menu';
 
 class moviesList extends React.Component{
     constructor(props) {
@@ -19,23 +17,25 @@ class moviesList extends React.Component{
     }
 
     render(){
-
         return(
             <div className="container-film">
+
+                <ComponentNavbar/>
+
                 <h1>Movie list:</h1>
 
-                {this.props.filmsList.map((filmList) => {
-                    return <div key={filmList.idMovie}>
+                {this.props.filmsList.map((filmList, id) => {
+                    return <div key={id}>
 
-                         <h2>{filmList.movieName}</h2>
+                        <Link to={`/currentMovie/${filmList.idMovie}`}>
+                            <h3>{filmList.movieName} </h3>
+                        </Link>
+
+                            <img src={filmList.movieImage}/>
 
                         <p>{filmList.movieDescription}</p>
-                        </div>
+                    </div>
                 })}
-
-                <Link to="/currentMovie">
-                    <h2>Select current movie</h2>
-                </Link>
             </div>
         )
     }
