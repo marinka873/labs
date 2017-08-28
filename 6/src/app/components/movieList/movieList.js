@@ -12,16 +12,21 @@ import movieJSON from '../../movie.json';
 class moviesList extends React.Component{
     constructor(props) {
         super(props);
+        this.state = {
+            filmsList: []
+        };
     }
 
     componentDidMount() {
-        this.props.loadMovie(movieJSON)
+        this.props.loadMovie(movieJSON);
+
+
     }
 
     render(){
         return(
-
             <div className="container-film">
+
                 <h1>Movie list:</h1>
 
                 <Link to="/currentMovie">
@@ -33,13 +38,21 @@ class moviesList extends React.Component{
 }
 
 moviesList.PropTypes ={
-    // loadMovie: PropTypes.func.isRequired
+    loadMovie: PropTypes.func.isRequired
 };
 
 const mapStateToProps = (state) => {
+    return {
+        filmsList: state.movie.filmsList
+    }
 };
 
 const mapDispatchToProps = () => {
+    return dispatch => ({
+        loadMovie: (movieJSON) => {
+            dispatch(setMoviesList(movieJSON))
+        }
+    })
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(moviesList);

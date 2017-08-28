@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 
 import {userSignup} from '../../actions/userAction';
 import movieJSON from '../../movie.json';
+
 import {setMoviesList} from '../../actions/movieAction';
 
 class Registration extends React.Component {
@@ -12,14 +13,9 @@ class Registration extends React.Component {
         super(props);
         this.state = {
             email: '',
-            password: '',
-            filList: []
+            password: ''
         };
         this.addUser = this.addUser.bind(this);
-    }
-
-    componentDidMount() {
-     this.props.loadMovie(movieJSON);
     }
 
     handleChangeEmail = (event) => {
@@ -91,9 +87,7 @@ Registration.propTypes = {
 const mapStateToProps = (state) => {
     return {
         login: state.user.login,
-        password: state.user.password,
-
-        filmList: state.movie.filList
+        password: state.user.password
     }
 };
 
@@ -101,11 +95,6 @@ const mapDispatchToProps = () => {
     return dispatch => ({
         userInfo: (login, password) => {
             dispatch(userSignup(login, password))
-        },
-
-        loadMovie: (movieJSON) => {
-
-            dispatch(setMoviesList(movieJSON))
         }
     })
 };
