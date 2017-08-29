@@ -25,7 +25,7 @@ class App extends React.Component {
                             <Switch>
                                 <Route exact path="/" component={Registration}/>
                                 <Route path="/moviesList" component={movieList}/>
-                                <Route path="/currentMovie" component={currentMovie}/>
+                                <Route path="/currentMovie/:id" component={currentMovie}/>
                             </Switch>
                         </div>
             </BrowserRouter>

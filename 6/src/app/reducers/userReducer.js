@@ -8,7 +8,9 @@ const initialState = {
 export default function usersReducer(state = initialState, action) {
     switch (action.type) {
         case USER_SIGNUP:
-            return {...state, login: action.login, password: action.password};
+            return { ...state,
+                login: action.login,
+                password: action.password };
             break;
         case USER_LOGOUT:
             return initialState;

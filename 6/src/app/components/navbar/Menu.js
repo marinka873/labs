@@ -1,5 +1,7 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
+import connect from 'react-redux';
+import PropTypes from 'prop-types';
 
 class ComponentNavbar extends React.Component{
     constructor(props) {
@@ -12,7 +14,7 @@ class ComponentNavbar extends React.Component{
                 <div className="container-fluid">
                     <div className="navbar-header">
                         <NavLink to="/" className="navbar-brand">
-                             Film List
+                             Movie List
                         </NavLink>
                     </div>
                     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
@@ -22,6 +24,7 @@ class ComponentNavbar extends React.Component{
                             </div>
                         </form>
                         <ul className="nav navbar-nav navbar-right">
+                            <li>{this.props.login}</li>
                             <li><a href="#">Logout</a></li>
                         </ul>
                     </div>
@@ -30,5 +33,16 @@ class ComponentNavbar extends React.Component{
         )
     }
 }
+
+const mapStateToProps = (state) => {
+    return {
+        filmsList: state.movie,
+        login: state.user.login
+    }
+};
+
+const mapDispatchToProps = () => {
+
+};
 
 export default ComponentNavbar;

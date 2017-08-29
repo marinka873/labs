@@ -19,20 +19,16 @@ class moviesList extends React.Component{
     render(){
         return(
             <div className="container-film">
-
                 <ComponentNavbar/>
 
                 <h1>Movie list:</h1>
 
                 {this.props.filmsList.map((filmList, id) => {
                     return <div key={id}>
-
                         <Link to={`/currentMovie/${filmList.idMovie}`}>
-                            <h3>{filmList.movieName} </h3>
+                            <h3>{filmList.movieName}</h3>
                         </Link>
-
-                            <img src={filmList.movieImage}/>
-
+                        <img src={filmList.movieImage} />
                         <p>{filmList.movieDescription}</p>
                     </div>
                 })}
@@ -52,7 +48,8 @@ moviesList.PropTypes = {
 
 const mapStateToProps = (state) => {
     return {
-        filmsList: state.movie
+        filmsList: state.movie,
+        login: state.user.login
     }
 };
 

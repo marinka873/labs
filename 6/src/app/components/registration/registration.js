@@ -42,9 +42,6 @@ class Registration extends React.Component {
 
         localStorage.setItem(user.keyEmail, userEmail);
         localStorage.setItem(user.keyPassword, userPassword);
-
-        console.log(localStorage.getItem(userEmail));
-        console.log(localStorage.getItem(userPassword));
     }
 
     render() {

@@ -39,13 +39,21 @@ let config = {
             }, {
             test: /\.json$/,
                 loader: 'json-loader'
-            }, {
+            },
+            {
             test: /\.(png|jpg|gif)$/,
-                 loader: 'file-loader',
             exclude: /node_modules/,
-            options: { }
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: '[path].[name].[ext]'
+                    }
+                }]
             }
         ]
+    },
+    devServer: {
+        historyApiFallback: true
     }
 };
 
