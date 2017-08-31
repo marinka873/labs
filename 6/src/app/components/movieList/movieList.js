@@ -7,6 +7,7 @@ import {setMoviesList} from '../../actions/movieAction';
 import movieJSON from '../../movie.json';
 import ComponentNavbar from '../navbar/Menu';
 
+
 class moviesList extends React.Component{
     constructor(props) {
         super(props);
@@ -14,6 +15,10 @@ class moviesList extends React.Component{
 
     componentDidMount() {
         this.props.loadMovie(movieJSON);
+    }
+
+    componentDidUpdate(){
+
     }
 
     render(){
@@ -48,7 +53,7 @@ moviesList.PropTypes = {
 
 const mapStateToProps = (state) => {
     return {
-        filmsList: state.movie,
+        filmsList: state.movies,
         login: state.user.login
     }
 };

@@ -4,33 +4,37 @@ import {connect} from 'react-redux';
 import ComponentNavbar from '../navbar/Menu';
 import UserComments from '../comments/comments';
 
-class currentMovie extends React.Component{
-    constructor(props){
+class currentMovie extends React.Component {
+    constructor(props) {
         super(props);
     }
 
-    render(){
-        return(
+    getMovieId = () => {
+        let movieUrlId = this.props.match.params.id;
+        let selectMovieId = this.props.filmsList.filter((movie) => {
+            return movie.idMovie === movieUrlId
+        });
+        return selectMovieId.map((movie, i) => {
+                return <div key={i}>
+                    <h1>{movie.movieName}</h1>
+                    <img src={movie.movieImage}/>
+                    <p>{movie.movieDescription}</p>
+                </div>
+            }
+        );
+    };
+
+    render() {
+        return (
             <div className="component-navbar">
                 <ComponentNavbar/>
+
                 <div className="jumbotron">
 
-                    {this.props.filmsList.map((currentFilm, id) => {
-                        if (this.props.match.params.id === currentFilm.idMovie){
-                            return (
-                                <div key={id}>
-                                    <h1>{currentFilm.movieName}</h1>
-                                    <img src={currentFilm.movieImage}/>
-                                    <p>{currentFilm.movieDescription}</p>
-                                </div>
-                            )
-                        }
+                    {this.getMovieId()}
 
-                    })}
-
+                    <UserComments movieId={this.props.match.params.id}/>
                 </div>
-
-                <UserComments/>
             </div>
         )
     }
@@ -38,14 +42,14 @@ class currentMovie extends React.Component{
 
 currentMovie.defaultProps = {
     filmsList: [],
-    userLogin: { }
+    userLogin: {}
 };
 
 const mapStateToProps = (state) => {
-    return{
-        filmsList: state.movie,
+    return {
+        filmsList: state.movies,
         login: state.user.login
     }
 };
 
-export default connect(mapStateToProps) (currentMovie);
+export default connect(mapStateToProps)(currentMovie);

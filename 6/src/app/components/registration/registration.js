@@ -12,7 +12,6 @@ class Registration extends React.Component {
             email: '',
             password: ''
         };
-        this.addUser = this.addUser.bind(this);
     }
 
     handleChangeEmail = (event) => {
@@ -27,7 +26,7 @@ class Registration extends React.Component {
         });
     };
 
-    addUser(event) {
+    addUser = (event) => {
         event.preventDefault();
 
         let userEmail = this.state.email;
@@ -42,7 +41,7 @@ class Registration extends React.Component {
 
         localStorage.setItem(user.keyEmail, userEmail);
         localStorage.setItem(user.keyPassword, userPassword);
-    }
+    };
 
     render() {
         return (

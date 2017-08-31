@@ -2,10 +2,10 @@ import {combineReducers} from 'redux';
 
 import usersReducer from './userReducer';
 import movieReducer from './movieReducer';
-import commentReducer from './commentReducer';
+import commentsReducer from './commentReducer';
 
 export default combineReducers({
    user: usersReducer,
-   movie: movieReducer,
-    comment: commentReducer
+   movies: movieReducer,
+    comments: commentsReducer
 });

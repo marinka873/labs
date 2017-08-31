@@ -1,73 +1,91 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
-import Moment from 'react-moment';
+import moment from 'moment';
 
+import {addComment} from "../../actions/commentsAction";
 
-import {addComment} from "../../actions/comments";
-
-
-class UserComments extends React.Component{
-    constructor(props){
+class UserComments extends React.Component {
+    constructor(props) {
         super(props);
-        this.state= {
-            comment: ''
+        this.state = {
+            comments: '',
+            userName: '',
+            currentMovieId: '',
+            userDate: ''
         };
-        this.addComment = this.addComment.bind(this);
     }
 
-    handleChangeComment =(event) => {
+    handleChangeComment = (event) => {
         this.setState({
-            comment: event.target.value
+            comments: event.target.value
         })
     };
 
-    addComment(event){
+    addComment = (event) => {
         event.preventDefault();
 
-        let moviesComment = this.state.comment;
+        let commentsUser = this.state.comments;
         let userName = this.props.login;
-        console.log('current user:',userName);
+        let userDate = moment(new Date()).format("YYYY-MM-DD hh:mm:ss");
+        let currentMovieById = this.props.movieId;
 
-        this.props.userComment(moviesComment);
+        this.props.userComment(commentsUser, userName, currentMovieById, userDate);
+    };
 
-        let currentTime = 'DD/MM/YY';
+    renderUserComment =() => {
+        let currentMovieByUrlId = this.props.movieId;
+        let commentsByMovieId = this.props.comments.filter((comment) => {
+            return comment.commentsMovie === currentMovieByUrlId
+        } );
 
-    }
+        return commentsByMovieId.map((commentMovies, i) => {
+                return <div key={i}>
+                    <p>{commentMovies.comments}
+                        {commentMovies.commentsUser}
+                        {commentMovies.commentsDate}
+                    </p>
+                </div>
+            }
+        );
+    };
 
-    render(){
-        return(
+    render() {
+        return (
             <div className="component__user--comments">
-               <form className="form-horizontal">
-                   <input type="text" placeholder="Your comment" onChange={this.handleChangeComment}
-                   value={this.state.comment}/>
-                   <button className="btn btn-primary" onClick={this.addComment}>Add comment</button>
+                <div>
+                    <form className="form-horizontal">
+                        <input type="text" placeholder="Your comment" onChange={this.handleChangeComment}
+                               value={this.state.comments}/>
+                        <button className="btn btn-primary" onClick={this.addComment}>Add comment</button>
+                        <hr/>
+                        <div className="comments">
 
+                            {this.renderUserComment()}
 
-
-                   <hr/>
-                   <p>User: {this.props.login}</p>
-                   <label>{this.state.comment}</label>
-               </form>
+                        </div>
+                    </form>
+                </div>
             </div>
         )
     }
 }
 
-UserComments.PropTypes ={
-  userComment: PropTypes.func.isRequired
+UserComments.PropTypes = {
+    userComment: PropTypes.func.isRequired
 };
 
 const mapStateToProps = (state) => {
-    return{
+    return {
         login: state.user.login,
-        filmsList: state.movie
+        filmsList: state.movies,
+        comments: state.comments
     }
 };
 const mapDispatchToProps = () => {
     return dispatch => ({
-        userComment: (moviesComment) => {
-            dispatch (addComment(moviesComment))
+        userComment: (comments, commentsUser, currentMovieById,commentsDate) => {
+            dispatch(addComment(comments, commentsUser, currentMovieById, commentsDate))
         }
 
     })

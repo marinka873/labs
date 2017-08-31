@@ -1,13 +1,13 @@
-import {ADD_COMMENT} from "../constants/comments";
+import {ADD_COMMENT} from "../constants/commentsConstants";
 
-const initialState = [ ];
+const initialState =[ ];
 
-export default function commentReducer(state = initialState, action){
+export default function commentsReducer(state = initialState, action = []){
     switch (action.type){
         case ADD_COMMENT:
             return [
                 ...state,
-                ...action.comment];
+                action.comments];
             break;
         default:
             return state;
