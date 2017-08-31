@@ -33,11 +33,11 @@ class UserComments extends React.Component {
         this.props.userComment(commentsUser, userName, currentMovieById, userDate);
     };
 
-    renderUserComment =() => {
+    renderUserComment = () => {
         let currentMovieByUrlId = this.props.movieId;
         let commentsByMovieId = this.props.comments.filter((comment) => {
             return comment.commentsMovie === currentMovieByUrlId
-        } );
+        });
 
         return commentsByMovieId.map((commentMovies, i) => {
                 return <div key={i}>
@@ -53,19 +53,15 @@ class UserComments extends React.Component {
     render() {
         return (
             <div className="component__user--comments">
-                <div>
-                    <form className="form-horizontal">
-                        <input type="text" placeholder="Your comment" onChange={this.handleChangeComment}
-                               value={this.state.comments}/>
-                        <button className="btn btn-primary" onClick={this.addComment}>Add comment</button>
-                        <hr/>
-                        <div className="comments">
-
-                            {this.renderUserComment()}
-
-                        </div>
-                    </form>
-                </div>
+                <form className="form-horizontal">
+                    <input type="text" placeholder="Your comment" onChange={this.handleChangeComment}
+                           value={this.state.comments}/>
+                    <button className="btn btn-primary" onClick={this.addComment}>Add comment</button>
+                    <hr/>
+                    <div className="comments">
+                        {this.renderUserComment()}
+                    </div>
+                </form>
             </div>
         )
     }
@@ -82,12 +78,12 @@ const mapStateToProps = (state) => {
         comments: state.comments
     }
 };
+
 const mapDispatchToProps = () => {
     return dispatch => ({
-        userComment: (comments, commentsUser, currentMovieById,commentsDate) => {
+        userComment: (comments, commentsUser, currentMovieById, commentsDate) => {
             dispatch(addComment(comments, commentsUser, currentMovieById, commentsDate))
         }
-
     })
 };
 

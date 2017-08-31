@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 
 import ComponentNavbar from '../navbar/Menu';
 import UserComments from '../comments/comments';
+import UsetRaiting from '../raiting/raiting';
 
 class currentMovie extends React.Component {
     constructor(props) {
@@ -33,6 +34,7 @@ class currentMovie extends React.Component {
 
                     {this.getMovieId()}
 
+                    <UsetRaiting movieId={this.props.match.params.id}/>
                     <UserComments movieId={this.props.match.params.id}/>
                 </div>
             </div>
