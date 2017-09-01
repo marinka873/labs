@@ -47,7 +47,7 @@ class moviesList extends React.Component {
     renderMoviesList = () => {
         this.props.filmsList.map((filmList, i) => {
             return <div key={i}>
-                <Link to={`/currentMovie/${filmList.idMovie}`}>
+                <Link to={`/currentMovie/${filmList.id}`}>
                     <h3>{filmList.movieName}</h3>
                 </Link>
                 <img src={filmList.movieImage}/>
@@ -72,7 +72,7 @@ class moviesList extends React.Component {
 
                 {this.props.filmsList.map((filmList, id) => {
                     return <div key={id}>
-                        <Link to={`/currentMovie/${filmList.idMovie}`}>
+                        <Link to={`/currentMovie/${filmList.id}`}>
                             <h3>{filmList.movieName}</h3>
                         </Link>
                         <img src={filmList.movieImage}/>

@@ -9,9 +9,7 @@ class UserRaiting extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            raiting: 0,
-            userName: '',
-            currentMovieId: ''
+            raiting: 0
         };
     }
 
@@ -23,29 +21,31 @@ class UserRaiting extends React.Component {
         let userName = this.props.login;
         let currentMovieById = this.props.movieId;
 
-        this.props.usersRaiting(raitingValue, userName, currentMovieById);
-
-        console.log(raitingValue);
+        this.props.addRaiting(raitingValue, userName, currentMovieById);
     };
 
+
     renderUserRaiting = () => {
+
         let currentMovieByUrlId = this.props.movieId;
+
         let raitingByMovieId = this.props.raiting.filter((raiting) => {
-            return raiting.raitingMovie === currentMovieByUrlId
+
+            return raiting.movieId === currentMovieByUrlId
+
         });
 
-        return raitingByMovieId.map((raitingMovies, i) => {
-                return <div key={i}>
+        return raitingByMovieId.map((raiting, i) => {
+            return (<div key={i}>
 
                 </div>
-            }
-        );
+            )
+        });
     };
 
     render() {
         return (
             <div className="component__raiting">
-
                 <ReactStars count={5}
                             onChange={this.handleChangeRaiting}
                             size={24}
@@ -60,20 +60,19 @@ class UserRaiting extends React.Component {
 }
 
 UserRaiting.PropTypes = {
-    usersRaiting: PropTypes.func.isRequired
+    addRaiting: PropTypes.func.isRequired
 };
 
 const mapStateToProps = (state) => {
     return {
         login: state.user.login,
-        filmsList: state.movies,
         raiting: state.raiting
     }
 };
 
 const mapDispatchToProps = () => {
     return dispatch => ({
-        usersRaiting: (raitingValue, userName, currentMovieById) => {
+        addRaiting: (raitingValue, userName, currentMovieById) => {
             dispatch(addRaiting(raitingValue, userName, currentMovieById))
         }
     })

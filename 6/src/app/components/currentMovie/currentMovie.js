@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 
 import ComponentNavbar from '../navbar/Menu';
 import UserComments from '../comments/comments';
-import UsetRaiting from '../raiting/raiting';
+import UserRaiting from '../raiting/raiting';
 
 class currentMovie extends React.Component {
     constructor(props) {
@@ -13,7 +13,7 @@ class currentMovie extends React.Component {
     getMovieId = () => {
         let movieUrlId = this.props.match.params.id;
         let selectMovieId = this.props.filmsList.filter((movie) => {
-            return movie.idMovie === movieUrlId
+            return movie.id === movieUrlId
         });
         return selectMovieId.map((movie, i) => {
                 return <div key={i}>
@@ -34,7 +34,7 @@ class currentMovie extends React.Component {
 
                     {this.getMovieId()}
 
-                    <UsetRaiting movieId={this.props.match.params.id}/>
+                    <UserRaiting movieId={this.props.match.params.id}/>
                     <UserComments movieId={this.props.match.params.id}/>
                 </div>
             </div>
@@ -43,14 +43,12 @@ class currentMovie extends React.Component {
 }
 
 currentMovie.defaultProps = {
-    filmsList: [],
-    userLogin: {}
+    filmsList: []
 };
 
 const mapStateToProps = (state) => {
     return {
-        filmsList: state.movies,
-        login: state.user.login
+        filmsList: state.movies
     }
 };
 

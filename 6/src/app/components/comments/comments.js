@@ -9,40 +9,37 @@ class UserComments extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            comments: '',
-            userName: '',
-            currentMovieId: '',
-            userDate: ''
+            comment: ''
         };
     }
 
     handleChangeComment = (event) => {
         this.setState({
-            comments: event.target.value
+            comment: event.target.value
         })
     };
 
     addComment = (event) => {
         event.preventDefault();
 
-        let commentsUser = this.state.comments;
+        let commentsUser = this.state.comment;
         let userName = this.props.login;
         let userDate = moment(new Date()).format("YYYY-MM-DD hh:mm:ss");
         let currentMovieById = this.props.movieId;
 
-        this.props.userComment(commentsUser, userName, currentMovieById, userDate);
+        this.props.addComment(commentsUser, userName, currentMovieById, userDate);
     };
 
     renderUserComment = () => {
         let currentMovieByUrlId = this.props.movieId;
-        let commentsByMovieId = this.props.comments.filter((comment) => {
+        let commentsByMovieId = this.props.comment.filter((comment) => {
             return comment.commentsMovie === currentMovieByUrlId
         });
 
         return commentsByMovieId.map((commentMovies, i) => {
                 return <div key={i}>
-                    <p>{commentMovies.comments}
-                        {commentMovies.commentsUser}
+                    <p>{commentMovies.comment}
+                        {commentMovies.commentUser}
                         {commentMovies.commentsDate}
                     </p>
                 </div>
@@ -52,10 +49,10 @@ class UserComments extends React.Component {
 
     render() {
         return (
-            <div className="component__user--comments">
+            <div className="component__user-comments">
                 <form className="form-horizontal">
                     <input type="text" placeholder="Your comment" onChange={this.handleChangeComment}
-                           value={this.state.comments}/>
+                           value={this.state.comment}/>
                     <button className="btn btn-primary" onClick={this.addComment}>Add comment</button>
                     <hr/>
                     <div className="comments">
@@ -68,21 +65,20 @@ class UserComments extends React.Component {
 }
 
 UserComments.PropTypes = {
-    userComment: PropTypes.func.isRequired
+    addComment: PropTypes.func.isRequired
 };
 
 const mapStateToProps = (state) => {
     return {
         login: state.user.login,
-        filmsList: state.movies,
-        comments: state.comments
+        comment: state.comment
     }
 };
 
 const mapDispatchToProps = () => {
     return dispatch => ({
-        userComment: (comments, commentsUser, currentMovieById, commentsDate) => {
-            dispatch(addComment(comments, commentsUser, currentMovieById, commentsDate))
+        addComment: (comment, commentsUser, currentMovieById, commentsDate) => {
+            dispatch(addComment(comment, commentsUser, currentMovieById, commentsDate))
         }
     })
 };

@@ -8,6 +8,6 @@ import raitingReducer from './raitingReducer';
 export default combineReducers({
    user: usersReducer,
    movies: movieReducer,
-    comments: commentsReducer,
+    comment: commentsReducer,
     raiting: raitingReducer
 });

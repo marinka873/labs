@@ -21,13 +21,13 @@ const store = createStore(
 class App extends React.Component {
     render() {
         return (<BrowserRouter>
-                        <div>
-                            <Switch>
-                                <Route exact path="/" component={Registration}/>
-                                <Route path="/moviesList" component={movieList}/>
-                                <Route path="/currentMovie/:id" component={currentMovie}/>
-                            </Switch>
-                        </div>
+                <div>
+                    <Switch>
+                        <Route exact path="/" component={Registration}/>
+                        <Route path="/moviesList" component={movieList}/>
+                        <Route path="/currentMovie/:id" component={currentMovie}/>
+                    </Switch>
+                </div>
             </BrowserRouter>
         )
     }
