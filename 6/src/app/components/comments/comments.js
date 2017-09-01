@@ -39,7 +39,7 @@ class UserComments extends React.Component {
         return commentsByMovieId.map((commentMovies, i) => {
                 return <div key={i}>
                     <p>{commentMovies.comment}
-                        {commentMovies.commentUser}
+                        {commentMovies.commentsUser}
                         {commentMovies.commentsDate}
                     </p>
                 </div>

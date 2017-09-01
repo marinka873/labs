@@ -5,7 +5,7 @@ export function addComment(userComment, currentUser, currentMovie, dateComments)
         type: ADD_COMMENT,
         comment: {
             comment: userComment,
-            commentUser: currentUser,
+            commentsUser: currentUser,
             commentsMovie: currentMovie,
             commentsDate: dateComments
         }
