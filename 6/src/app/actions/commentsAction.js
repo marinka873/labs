@@ -1,13 +1,13 @@
 import {ADD_COMMENT} from "../constants/commentsConstants";
 
-export function addComment(userComment, currentUser, currentMovie, dateComments) {
+export function addComment(value, user, movieId, date) {
     return {
         type: ADD_COMMENT,
         comment: {
-            comment: userComment,
-            commentsUser: currentUser,
-            commentsMovie: currentMovie,
-            commentsDate: dateComments
+            value: value,
+            user: user,
+            movieId: movieId,
+            date: date
         }
     }
 }

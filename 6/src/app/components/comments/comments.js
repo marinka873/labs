@@ -5,7 +5,7 @@ import moment from 'moment';
 
 import {addComment} from "../../actions/commentsAction";
 
-class UserComments extends React.Component {
+class Comments extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -22,25 +22,25 @@ class UserComments extends React.Component {
     addComment = (event) => {
         event.preventDefault();
 
-        let commentsUser = this.state.comment;
-        let userName = this.props.login;
-        let userDate = moment(new Date()).format("YYYY-MM-DD hh:mm:ss");
-        let currentMovieById = this.props.movieId;
+        let comment = this.state.comment;
+        let user = this.props.login;
+        let date = moment(new Date()).format("YYYY-MM-DD hh:mm:ss");
+        let movieId = this.props.movieId;
 
-        this.props.addComment(commentsUser, userName, currentMovieById, userDate);
+        this.props.addComment(comment, user, movieId, date);
     };
 
     renderUserComment = () => {
-        let currentMovieByUrlId = this.props.movieId;
-        let commentsByMovieId = this.props.comment.filter((comment) => {
-            return comment.commentsMovie === currentMovieByUrlId
+        let movieByUrlId = this.props.movieId;
+        let movieById = this.props.comment.filter((comment) => {
+            return comment.movieId === movieByUrlId
         });
 
-        return commentsByMovieId.map((commentMovies, i) => {
+        return movieById.map((comment, i) => {
                 return <div key={i}>
-                    <p>{commentMovies.comment}
-                        {commentMovies.commentsUser}
-                        {commentMovies.commentsDate}
+                    <p>{comment.value}
+                        {comment.user}
+                        {comment.date}
                     </p>
                 </div>
             }
@@ -64,7 +64,7 @@ class UserComments extends React.Component {
     }
 }
 
-UserComments.PropTypes = {
+Comments.PropTypes = {
     addComment: PropTypes.func.isRequired
 };
 
@@ -77,10 +77,10 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = () => {
     return dispatch => ({
-        addComment: (comment, commentsUser, currentMovieById, commentsDate) => {
-            dispatch(addComment(comment, commentsUser, currentMovieById, commentsDate))
+        addComment: (comment, user, movieId, date) => {
+            dispatch(addComment(comment, user, movieId, date))
         }
     })
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(UserComments);
+export default connect(mapStateToProps, mapDispatchToProps)(Comments);

@@ -5,7 +5,7 @@ import ReactStars from 'react-stars';
 
 import {addRaiting} from "../../actions/ratingAction";
 
-class UserRaiting extends React.Component {
+class Raiting extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -59,7 +59,7 @@ class UserRaiting extends React.Component {
     }
 }
 
-UserRaiting.PropTypes = {
+Raiting.PropTypes = {
     addRaiting: PropTypes.func.isRequired
 };
 
@@ -78,4 +78,4 @@ const mapDispatchToProps = () => {
     })
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(UserRaiting);
+export default connect(mapStateToProps, mapDispatchToProps)(Raiting);

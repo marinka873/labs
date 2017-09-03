@@ -32,7 +32,7 @@ class Registration extends React.Component {
         let userEmail = this.state.email;
         let userPassword = this.state.password;
 
-        this.props.userInfo(userEmail, userPassword);
+        this.props.userSignup(userEmail, userPassword);
 
         let user = {
             keyEmail: userEmail,
@@ -74,7 +74,7 @@ class Registration extends React.Component {
 }
 
 Registration.propTypes = {
-    userInfo: PropTypes.func.isRequired
+    userSignup: PropTypes.func.isRequired
 };
 
 const mapStateToProps = (state) => {
@@ -86,7 +86,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = () => {
     return dispatch => ({
-        userInfo: (login, password) => {
+        userSignup: (login, password) => {
             dispatch(userSignup(login, password))
         }
     })

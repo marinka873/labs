@@ -5,10 +5,10 @@ import {Link} from 'react-router-dom';
 
 import {setMoviesList} from '../../actions/movieAction';
 import movieJSON from '../../movie.json';
-import ComponentNavbar from '../navbar/Menu';
+import Navbar from '../navbar/navbar';
 
 
-class moviesList extends React.Component {
+class MoviesList extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -17,7 +17,7 @@ class moviesList extends React.Component {
     }
 
     componentDidMount() {
-        this.props.loadMovie(movieJSON);
+        this.props.setMoviesList(movieJSON);
     }
 
     componentDidUpdate() {
@@ -31,15 +31,15 @@ class moviesList extends React.Component {
 
         let searchValue = this.state.search;
 
-        let filterMoviesList = this.props.filmsList.filter((searchMovie) => {
-            return searchMovie.movieName.toLowerCase().indexOf(searchValue.toLowerCase()) !== -1
+        let filterMoviesList = this.props.filmsList.filter((search) => {
+            return search.name.toLowerCase().indexOf(searchValue.toLowerCase()) !== -1
         });
 
-        return filterMoviesList.map((searchMovie, i) => {
+        return filterMoviesList.map((search, i) => {
             return <div className="component__search" key={i}>
-                <h3>{searchMovie.movieName}</h3>
-                <img src={searchMovie.movieImage}/>
-                <p>{searchMovie.movieDescription}</p>
+                <h3>{search.name}</h3>
+                <img src={search.image}/>
+                <p>{search.description}</p>
             </div>
         })
     };
@@ -48,10 +48,10 @@ class moviesList extends React.Component {
         this.props.filmsList.map((filmList, i) => {
             return <div key={i}>
                 <Link to={`/currentMovie/${filmList.id}`}>
-                    <h3>{filmList.movieName}</h3>
+                    <h3>{filmList.name}</h3>
                 </Link>
-                <img src={filmList.movieImage}/>
-                <p>{filmList.movieDescription}</p>
+                <img src={filmList.image}/>
+                <p>{filmList.description}</p>
             </div>
         })
     };
@@ -59,7 +59,7 @@ class moviesList extends React.Component {
     render() {
         return (
             <div className="container-film">
-                <ComponentNavbar/>
+                <Navbar/>
 
                 <div className="component-search">
                     <form className="form-group">
@@ -73,10 +73,10 @@ class moviesList extends React.Component {
                 {this.props.filmsList.map((filmList, id) => {
                     return <div key={id}>
                         <Link to={`/currentMovie/${filmList.id}`}>
-                            <h3>{filmList.movieName}</h3>
+                            <h3>{filmList.name}</h3>
                         </Link>
-                        <img src={filmList.movieImage}/>
-                        <p>{filmList.movieDescription}</p>
+                        <img src={filmList.image}/>
+                        <p>{filmList.description}</p>
                     </div>
                 })}
 
@@ -87,28 +87,27 @@ class moviesList extends React.Component {
     }
 }
 
-moviesList.defaultProps = {
+MoviesList.defaultProps = {
     filmsList: []
 };
 
-moviesList.PropTypes = {
-    loadMovie: PropTypes.func.isRequired,
+MoviesList.PropTypes = {
+    setMoviesList: PropTypes.func.isRequired,
     filmsList: PropTypes.array.isRequired
 };
 
 const mapStateToProps = (state) => {
     return {
-        filmsList: state.movies,
-        login: state.user.login
+        filmsList: state.movies
     }
 };
 
 const mapDispatchToProps = () => {
     return dispatch => ({
-        loadMovie: (movieJSON) => {
+        setMoviesList: (movieJSON) => {
             dispatch(setMoviesList(movieJSON))
         }
     })
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(moviesList);
+export default connect(mapStateToProps, mapDispatchToProps)(MoviesList);

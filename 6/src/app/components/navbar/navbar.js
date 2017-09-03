@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {NavLink} from 'react-router-dom';
 
-class ComponentNavbar extends React.Component{
+class Navbar extends React.Component{
     constructor(props){
         super(props);
     }
@@ -29,7 +29,7 @@ class ComponentNavbar extends React.Component{
     }
 }
 
-ComponentNavbar.defaultProps = {
+Navbar.defaultProps = {
     userLogin: { }
 };
 
@@ -39,4 +39,4 @@ const mapStateToProps = (state) => {
     }
 };
 
-export default connect(mapStateToProps) (ComponentNavbar);
+export default connect(mapStateToProps) (Navbar);

@@ -1,25 +1,25 @@
 import React from 'react';
 import {connect} from 'react-redux';
 
-import ComponentNavbar from '../navbar/Menu';
-import UserComments from '../comments/comments';
-import UserRaiting from '../raiting/raiting';
+import Navbar from '../navbar/navbar';
+import Comments from '../comments/comments';
+import Raiting from '../raiting/raiting';
 
-class currentMovie extends React.Component {
+class CurrentMovie extends React.Component {
     constructor(props) {
         super(props);
     }
 
     getMovieId = () => {
         let movieUrlId = this.props.match.params.id;
-        let selectMovieId = this.props.filmsList.filter((movie) => {
+        let currentMovieId = this.props.filmsList.filter((movie) => {
             return movie.id === movieUrlId
         });
-        return selectMovieId.map((movie, i) => {
+        return currentMovieId.map((movie, i) => {
                 return <div key={i}>
-                    <h1>{movie.movieName}</h1>
-                    <img src={movie.movieImage}/>
-                    <p>{movie.movieDescription}</p>
+                    <h1>{movie.name}</h1>
+                    <img src={movie.image}/>
+                    <p>{movie.description}</p>
                 </div>
             }
         );
@@ -28,21 +28,21 @@ class currentMovie extends React.Component {
     render() {
         return (
             <div className="component-navbar">
-                <ComponentNavbar/>
+                <Navbar/>
 
                 <div className="jumbotron">
 
                     {this.getMovieId()}
 
-                    <UserRaiting movieId={this.props.match.params.id}/>
-                    <UserComments movieId={this.props.match.params.id}/>
+                    <Raiting movieId={this.props.match.params.id}/>
+                    <Comments movieId={this.props.match.params.id}/>
                 </div>
             </div>
         )
     }
 }
 
-currentMovie.defaultProps = {
+CurrentMovie.defaultProps = {
     filmsList: []
 };
 
@@ -52,4 +52,4 @@ const mapStateToProps = (state) => {
     }
 };
 
-export default connect(mapStateToProps)(currentMovie);
+export default connect(mapStateToProps)(CurrentMovie);
