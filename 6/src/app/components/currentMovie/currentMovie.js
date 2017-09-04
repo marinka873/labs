@@ -6,9 +6,6 @@ import Comments from '../comments/comments';
 import Rating from '../raiting/raiting';
 
 class CurrentMovie extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
     renderMovie = () => {
         let movieId = this.props.match.params.id;

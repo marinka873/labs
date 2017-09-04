@@ -7,7 +7,6 @@ import {addRating} from "../../actions/ratingAction";
 
 class Rating extends React.Component {
 
-
     handleChangeRating = (ratingValue) => {
         this.setState({
             rating: ratingValue

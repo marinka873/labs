@@ -49,7 +49,7 @@ class Comments extends React.Component {
 
     render() {
         return (
-            <div className="component__user-comments">
+            <div className="component__comments">
                 <form className="form-horizontal">
                     <input type="text" placeholder="Your comment" onChange={this.handleChangeComment}
                            value={this.state.comment}/>
