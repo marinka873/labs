@@ -20,21 +20,21 @@ const store = createStore(
 
 class App extends React.Component {
     render() {
-        return (<BrowserRouter>
-                <div>
-                    <Switch>
-                        <Route exact path="/" component={Registration}/>
-                        <Route path="/moviesList" component={MoviesList}/>
-                        <Route path="/currentMovie/:id" component={CurrentMovie}/>
-                    </Switch>
-                </div>
-            </BrowserRouter>
+        return (<Provider store={store}>
+                <BrowserRouter>
+                    <div>
+                        <Switch>
+                            <Route exact path="/" component={Registration}/>
+                            <Route path="/moviesList" component={MoviesList}/>
+                            <Route path="/currentMovie/:id" component={CurrentMovie}/>
+                        </Switch>
+                    </div>
+                </BrowserRouter>
+            </Provider>
         )
     }
 }
 
 ReactDOM.render((
-    <Provider store={store}>
          <App/>
-    </Provider>
  ), document.getElementById('root'));

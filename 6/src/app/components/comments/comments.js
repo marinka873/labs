@@ -38,10 +38,10 @@ class Comments extends React.Component {
 
         return movieById.map((comment, i) => {
                 return <div key={i}>
-                    <p>{comment.value}
-                        {comment.user}
-                        {comment.date}
-                    </p>
+                        <hr/>
+                        <h5>{comment.user} {comment.date}</h5>
+                        <p>{comment.value} </p>
+                        <hr/>
                 </div>
             }
         );
@@ -65,7 +65,8 @@ class Comments extends React.Component {
 }
 
 Comments.PropTypes = {
-    addComment: PropTypes.func.isRequired
+    addComment: PropTypes.func.isRequired,
+    comment: PropTypes.array.isRequired
 };
 
 const mapStateToProps = (state) => {

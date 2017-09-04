@@ -3,79 +3,75 @@ import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import ReactStars from 'react-stars';
 
-import {addRaiting} from "../../actions/ratingAction";
+import {addRating} from "../../actions/ratingAction";
 
-class Raiting extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            raiting: 0
-        };
-    }
+class Rating extends React.Component {
 
-    handleChangeRaiting = (raitingValue) => {
+
+    handleChangeRating = (ratingValue) => {
         this.setState({
-            raiting: raitingValue
+            rating: ratingValue
         });
 
         let userName = this.props.login;
-        let currentMovieById = this.props.movieId;
+        let MovieId = this.props.movieId;
 
-        this.props.addRaiting(raitingValue, userName, currentMovieById);
+        this.props.addRating(ratingValue, userName, MovieId);
     };
 
+    getRating = () => {
 
-    renderUserRaiting = () => {
-
-        let currentMovieByUrlId = this.props.movieId;
-
-        let raitingByMovieId = this.props.raiting.filter((raiting) => {
-
-            return raiting.movieId === currentMovieByUrlId
-
+        let sumRating = 0;
+        let movieId = this.props.movieId;
+        let rating = this.props.rating.filter( (value) => {
+            return value.movieId === movieId
         });
+        let ratingValue = rating.map(w => w.value);
 
-        return raitingByMovieId.map((raiting, i) => {
-            return (<div key={i}>
-
-                </div>
-            )
-        });
+        if( ratingValue.length !== 0){
+           sumRating = ratingValue.reduce( (x, y) => x+y);
+        }
+        return sumRating/rating.length;
     };
 
     render() {
+        let value = this.getRating();
+        console.log(value);
         return (
-            <div className="component__raiting">
+            <div className="component__rating">
                 <ReactStars count={5}
-                            onChange={this.handleChangeRaiting}
+                            onChange={this.handleChangeRating}
                             size={24}
                             color2={'#ffd700'}
-                            value={this.state.raiting}
+                            value={value}
                 />
-
-                {this.renderUserRaiting()}
             </div>
         )
     }
 }
 
-Raiting.PropTypes = {
-    addRaiting: PropTypes.func.isRequired
+Rating.defaultProps = {
+    rating: []
+};
+
+Rating.PropTypes = {
+    addRating: PropTypes.func.isRequired,
+    rating: PropTypes.array.isRequired
 };
 
 const mapStateToProps = (state) => {
     return {
         login: state.user.login,
-        raiting: state.raiting
+        rating: state.rating
     }
 };
 
 const mapDispatchToProps = () => {
     return dispatch => ({
-        addRaiting: (raitingValue, userName, currentMovieById) => {
-            dispatch(addRaiting(raitingValue, userName, currentMovieById))
+        addRating: (ratingValue, userName, MovieId) => {
+            dispatch(addRating(ratingValue, userName, MovieId))
         }
     })
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Raiting);
+export default connect(mapStateToProps, mapDispatchToProps)(Rating);

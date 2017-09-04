@@ -3,19 +3,20 @@ import {connect} from 'react-redux';
 
 import Navbar from '../navbar/navbar';
 import Comments from '../comments/comments';
-import Raiting from '../raiting/raiting';
+import Rating from '../raiting/raiting';
 
 class CurrentMovie extends React.Component {
     constructor(props) {
         super(props);
     }
 
-    getMovieId = () => {
-        let movieUrlId = this.props.match.params.id;
-        let currentMovieId = this.props.filmsList.filter((movie) => {
-            return movie.id === movieUrlId
+    renderMovie = () => {
+        let movieId = this.props.match.params.id;
+
+        let MovieId = this.props.filmsList.filter((movie) => {
+            return movie.id === movieId
         });
-        return currentMovieId.map((movie, i) => {
+        return MovieId.map((movie, i) => {
                 return <div key={i}>
                     <h1>{movie.name}</h1>
                     <img src={movie.image}/>
@@ -32,9 +33,9 @@ class CurrentMovie extends React.Component {
 
                 <div className="jumbotron">
 
-                    {this.getMovieId()}
+                    <div>{this.renderMovie()}</div>
 
-                    <Raiting movieId={this.props.match.params.id}/>
+                    <Rating movieId={this.props.match.params.id}/>
                     <Comments movieId={this.props.match.params.id}/>
                 </div>
             </div>

@@ -20,10 +20,6 @@ class MoviesList extends React.Component {
         this.props.setMoviesList(movieJSON);
     }
 
-    componentDidUpdate() {
-
-    }
-
     handleChangeSearch = (event) => {
         this.setState({
             search: event.target.value.substr(0, 20)
@@ -45,7 +41,7 @@ class MoviesList extends React.Component {
     };
 
     renderMoviesList = () => {
-        this.props.filmsList.map((filmList, i) => {
+       return this.props.filmsList.map((filmList, i) => {
             return <div key={i}>
                 <Link to={`/currentMovie/${filmList.id}`}>
                     <h3>{filmList.name}</h3>
@@ -70,16 +66,6 @@ class MoviesList extends React.Component {
 
                 <h1>Movie list:</h1>
 
-                {this.props.filmsList.map((filmList, id) => {
-                    return <div key={id}>
-                        <Link to={`/currentMovie/${filmList.id}`}>
-                            <h3>{filmList.name}</h3>
-                        </Link>
-                        <img src={filmList.image}/>
-                        <p>{filmList.description}</p>
-                    </div>
-                })}
-
                 {this.renderMoviesList()}
 
             </div>
@@ -93,7 +79,8 @@ MoviesList.defaultProps = {
 
 MoviesList.PropTypes = {
     setMoviesList: PropTypes.func.isRequired,
-    filmsList: PropTypes.array.isRequired
+    filmsList: PropTypes.array.isRequired,
+    search: PropTypes.array.isRequired
 };
 
 const mapStateToProps = (state) => {
