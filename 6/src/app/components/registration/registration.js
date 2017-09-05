@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
-import {Link} from 'react-router-dom';
+import {Link, Redirect} from 'react-router-dom';
 
 import {userSignup} from '../../actions/userAction';
 
@@ -10,8 +10,16 @@ class Registration extends React.Component {
         super(props);
         this.state = {
             email: '',
-            password: ''
+            password: '',
+            loginError: false
         };
+    }
+
+    componentDidMount (){
+        if (localStorage.getItem('userEmail') &&
+            localStorage.getItem('userPassword')) {
+            this.props.history.push('/moviesList');
+        }
     }
 
     handleChangeEmail = (event) => {
@@ -29,18 +37,27 @@ class Registration extends React.Component {
     addUser = (event) => {
         event.preventDefault();
 
-        let userEmail = this.state.email;
-        let userPassword = this.state.password;
+        if (this.state.email.length > 0 && this.state.password.length > 0) {
 
-        this.props.userSignup(userEmail, userPassword);
+            let userEmail = this.state.email;
+            let userPassword = this.state.password;
 
-        let user = {
-            keyEmail: userEmail,
-            keyPassword: userPassword
-        };
+            this.props.userSignup(userEmail, userPassword);
 
-        localStorage.setItem(user.keyEmail, userEmail);
-        localStorage.setItem(user.keyPassword, userPassword);
+            let user = {
+                keyEmail: userEmail,
+                keyPassword: userPassword
+            };
+
+            localStorage.setItem('userEmail', user.keyEmail);
+            localStorage.setItem('userPassword', user.keyPassword);
+            this.props.history.push('/moviesList');
+        }
+        else {
+            this.setState({
+                loginError: true
+            })
+        }
     };
 
     render() {
@@ -55,19 +72,13 @@ class Registration extends React.Component {
                         <input type="password" placeholder="Password" onChange={this.handleChangePassword}
                                value={this.state.password}/>
                         <br/>
-                        <Link to='/movieList'>
-                            <button type="submit" className="btn btn-primary btn-lg" onClick={this.addUser}>Registration
+                            <button type="submit" className="btn btn-primary btn-lg" onClick={this.addUser}>Login
                             </button>
-                        </Link>
                     </fieldset>
                 </form>
-
-                <h4>Current user: {this.props.login}</h4>
-
-                    <Link to="/moviesList">
-                        <h2> Movie  list routing:</h2>
-                    </Link>
-
+                {this.state.loginError && <div>
+                    <h3>Error</h3>
+                </div>}
             </div>
         );
     }

@@ -1,8 +1,16 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {NavLink} from 'react-router-dom';
+import {userLogout} from "../../actions/userAction";
 
 class Navbar extends React.Component{
+
+    logout = ( ) => {
+        localStorage.clear();
+
+        this.props.userLogout();
+        this.props.history.push('/');
+    };
 
     render(){
         return(
@@ -16,8 +24,9 @@ class Navbar extends React.Component{
                     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
                         <ul className="nav navbar-nav navbar-right">
                             <li><a>Current user:  {this.props.login}</a></li>
-                            <li><NavLink to="/" className="navbar-link">
-                                Logout </NavLink></li>
+
+                            <li className="navbar-link" onClick={this.logout}>
+                                Logout </li>
                         </ul>
                     </div>
                 </div>
@@ -36,4 +45,12 @@ const mapStateToProps = (state) => {
     }
 };
 
-export default connect(mapStateToProps) (Navbar);
+const mapDispatchToProps = () => {
+    return dispatch => ({
+        userLogout: () => {
+            dispatch(userLogout())
+        }
+    })
+};
+
+export default connect(mapStateToProps, mapDispatchToProps) (Navbar);

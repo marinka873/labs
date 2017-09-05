@@ -30,10 +30,10 @@ class Comments extends React.Component {
         this.props.addComment(comment, user, movieId, date);
     };
 
-    renderUserComment = () => {
-        let movieByUrlId = this.props.movieId;
+    renderComments = () => {
+        let movieId = this.props.movieId;
         let movieById = this.props.comment.filter((comment) => {
-            return comment.movieId === movieByUrlId
+            return comment.movieId === movieId
         });
 
         return movieById.map((comment, i) => {
@@ -56,7 +56,7 @@ class Comments extends React.Component {
                     <button className="btn btn-primary" onClick={this.addComment}>Add comment</button>
                     <hr/>
                     <div className="comments">
-                        {this.renderUserComment()}
+                        {this.renderComments()}
                     </div>
                 </form>
             </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import PropTypes from 'prop-types';
 
 import Navbar from '../navbar/navbar';
 import Comments from '../comments/comments';
@@ -26,12 +27,9 @@ class CurrentMovie extends React.Component {
     render() {
         return (
             <div className="component-navbar">
-                <Navbar/>
-
+                <Navbar history={this.props.history}/>
                 <div className="jumbotron">
-
                     <div>{this.renderMovie()}</div>
-
                     <Rating movieId={this.props.match.params.id}/>
                     <Comments movieId={this.props.match.params.id}/>
                 </div>
@@ -42,6 +40,10 @@ class CurrentMovie extends React.Component {
 
 CurrentMovie.defaultProps = {
     filmsList: []
+};
+
+CurrentMovie.PropTypes = {
+    renderMovie: PropTypes.func.isRequired
 };
 
 const mapStateToProps = (state) => {

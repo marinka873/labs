@@ -21,7 +21,7 @@ const store = createStore(
 class App extends React.Component {
     render() {
         return (<Provider store={store}>
-                <BrowserRouter>
+                <BrowserRouter history={this.props.history}>
                     <div>
                         <Switch>
                             <Route exact path="/" component={Registration}/>

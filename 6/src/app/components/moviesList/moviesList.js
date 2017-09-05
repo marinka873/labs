@@ -41,7 +41,7 @@ class MoviesList extends React.Component {
     };
 
     renderMoviesList = () => {
-       return this.props.filmsList.map((filmList, i) => {
+        return this.props.filmsList.map((filmList, i) => {
             return <div key={i}>
                 <Link to={`/currentMovie/${filmList.id}`}>
                     <h3>{filmList.name}</h3>
@@ -55,7 +55,7 @@ class MoviesList extends React.Component {
     render() {
         return (
             <div className="container-film">
-                <Navbar/>
+                <Navbar history={this.props.history}/>
 
                 <div className="component-search">
                     <form className="form-group">
@@ -65,9 +65,7 @@ class MoviesList extends React.Component {
                 </div>
 
                 <h1>Movie list:</h1>
-
                 {this.renderMoviesList()}
-
             </div>
         )
     }
@@ -79,8 +77,7 @@ MoviesList.defaultProps = {
 
 MoviesList.PropTypes = {
     setMoviesList: PropTypes.func.isRequired,
-    filmsList: PropTypes.array.isRequired,
-    search: PropTypes.array.isRequired
+    filmsList: PropTypes.array.isRequired
 };
 
 const mapStateToProps = (state) => {

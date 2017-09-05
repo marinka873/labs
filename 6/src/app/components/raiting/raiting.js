@@ -25,7 +25,7 @@ class Rating extends React.Component {
         let rating = this.props.rating.filter( (value) => {
             return value.movieId === movieId
         });
-        let ratingValue = rating.map(w => w.value);
+        let ratingValue = rating.map(value => value.value);
 
         if( ratingValue.length !== 0){
            sumRating = ratingValue.reduce( (x, y) => x+y);
@@ -35,7 +35,6 @@ class Rating extends React.Component {
 
     render() {
         let value = this.getRating();
-        console.log(value);
         return (
             <div className="component__rating">
                 <ReactStars count={5}
