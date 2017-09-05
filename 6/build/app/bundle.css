@@ -1,0 +1,26 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans|Faustina);* {
+  font: Droid Sans, Faustina, sans-serif;
+  font-size: 18px; }
+
+body {
+  background-color: darkgray; }
+.container-registration__form__button {
+  margin-top: 1%;
+  padding: 0.5em;
+  background: #9ce469;
+  text-align: center;
+  color: black;
+  border-radius: 2px; }
+  .container-registration__form__button:hover {
+    background: #c2e497; }
+
+.container-registration__form__input {
+  border-color: darkgrey;
+  border-radius: 3px;
+  text-align: center;
+  padding-top: 1%; }
+
+.container-registration {
+  margin: 0 10% auto;
+  text-align: center;
+  background-color: antiquewhite; }
