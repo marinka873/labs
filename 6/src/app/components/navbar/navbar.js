@@ -7,7 +7,6 @@ class Navbar extends React.Component{
 
     logout = ( ) => {
         localStorage.clear();
-
         this.props.userLogout();
         this.props.history.push('/');
     };
@@ -24,9 +23,8 @@ class Navbar extends React.Component{
                     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
                         <ul className="nav navbar-nav navbar-right">
                             <li><a>Current user:  {this.props.login}</a></li>
-
-                            <li className="navbar-link" onClick={this.logout}>
-                                Logout </li>
+                            <li className="navbar-link" onClick={this.logout}><a>
+                                Logout </a></li>
                         </ul>
                     </div>
                 </div>

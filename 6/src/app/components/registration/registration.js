@@ -1,7 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
-import {Link, Redirect} from 'react-router-dom';
 
 import {userSignup} from '../../actions/userAction';
 
@@ -41,9 +40,6 @@ class Registration extends React.Component {
 
             let userEmail = this.state.email;
             let userPassword = this.state.password;
-
-            this.props.userSignup(userEmail, userPassword);
-
             let user = {
                 keyEmail: userEmail,
                 keyPassword: userPassword
@@ -51,6 +47,8 @@ class Registration extends React.Component {
 
             localStorage.setItem('userEmail', user.keyEmail);
             localStorage.setItem('userPassword', user.keyPassword);
+
+            this.props.userSignup(userEmail, userPassword);
             this.props.history.push('/moviesList');
         }
         else {
@@ -77,7 +75,7 @@ class Registration extends React.Component {
                     </fieldset>
                 </form>
                 {this.state.loginError && <div>
-                    <h3>Error</h3>
+                    <h3 className="text-danger">Please enter your email and password</h3>
                 </div>}
             </div>
         );

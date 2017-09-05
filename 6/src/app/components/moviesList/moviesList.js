@@ -7,7 +7,6 @@ import {setMoviesList} from '../../actions/movieAction';
 import movieJSON from '../../movie.json';
 import Navbar from '../navbar/navbar';
 
-
 class MoviesList extends React.Component {
     constructor(props) {
         super(props);
@@ -17,7 +16,9 @@ class MoviesList extends React.Component {
     }
 
     componentDidMount() {
-        this.props.setMoviesList(movieJSON);
+        if(this.props.movies !== 0 ) {
+            this.props.setMoviesList(movieJSON);
+        }
     }
 
     handleChangeSearch = (event) => {
