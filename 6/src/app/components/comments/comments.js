@@ -38,10 +38,10 @@ class Comments extends React.Component {
 
         return movieById.map((comment, i) => {
                 return <div key={i}>
-                        <hr/>
-                        <h5>{comment.user} {comment.date}</h5>
-                        <p>{comment.value} </p>
-                        <hr/>
+                    <hr/>
+                    <h5>{comment.user} {comment.date}</h5>
+                    <p>{comment.value} </p>
+                    <hr/>
                 </div>
             }
         );

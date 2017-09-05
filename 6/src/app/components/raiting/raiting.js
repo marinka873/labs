@@ -8,29 +8,27 @@ import {addRating} from "../../actions/ratingAction";
 class Rating extends React.Component {
 
     handleChangeRating = (ratingValue) => {
-        this.setState({
-            rating: ratingValue
-        });
-
         let userName = this.props.login;
         let MovieId = this.props.movieId;
 
+        this.setState({
+            rating: ratingValue
+        });
         this.props.addRating(ratingValue, userName, MovieId);
     };
 
     getRating = () => {
-
         let sumRating = 0;
         let movieId = this.props.movieId;
-        let rating = this.props.rating.filter( (value) => {
-            return value.movieId === movieId
+        let rating = this.props.rating.filter((value) => {
+            return value.movieId === movieId;
         });
         let ratingValue = rating.map(value => value.value);
 
-        if( ratingValue.length !== 0){
-           sumRating = ratingValue.reduce( (x, y) => x+y);
+        if (ratingValue.length !== 0) {
+            sumRating = ratingValue.reduce((x, y) => x + y);
         }
-        return sumRating/rating.length;
+        return sumRating / rating.length;
     };
 
     render() {
@@ -41,8 +39,7 @@ class Rating extends React.Component {
                             onChange={this.handleChangeRating}
                             size={24}
                             color2={'#ffd700'}
-                            value={value}
-                />
+                            value={value}/>
             </div>
         )
     }

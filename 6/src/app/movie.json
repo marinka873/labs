@@ -54,13 +54,14 @@
     "genre": "Action",
     "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BN2YyZjQ0NTEtNzU5MS00NGZkLTg0MTEtYzJmMWY3MWRhZjM2XkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
     "description": "Allied soldiers from Belgium, the British Empire and France are surrounded by the German army and evacuated during a fierce battle in World War II."
-  },{
+  },
+  {
     "id": "9",
     "name": "Minions",
     "genre": "Animation",
     "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTg2MTMyMzU0M15BMl5BanBnXkFtZTgwOTU3ODk4NTE@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
     "description": "Minions Stuart, Kevin, and Bob are recruited by Scarlet Overkill, a supervillain who, alongside her inventor husband Herb, hatches a plot to take over the world."
-},
+  },
   {
     "id": "10",
     "name": "Wonder Woman",
@@ -250,7 +251,6 @@
     "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjE2NDkxNTY2M15BMl5BanBnXkFtZTgwMDc2NzE0MTI@._V1_SY1000_CR0,0,648,1000_AL_.jpg",
     "description": "After returning to the criminal underworld to repay a debt, John Wick discovers that a large bounty has been put on his life."
   },
-
   {
     "id": "37",
     "name": "Contratiempo",
@@ -258,7 +258,6 @@
     "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BOTEwYTkzMTMtODEzNC00YWM2LTgxNDMtZWNkNTQzNDVjMWQ2L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMDY4NTQ1MA@@._V1_SY1000_CR0,0,703,1000_AL_.jpg",
     "description": "A young businessman faces a lawyer trying to prove his innocence by the assassination of his lover."
   },
-
   {
     "id": "38",
     "name": "Annabelle: Creation",
@@ -266,7 +265,6 @@
     "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA1MzIwMjMxNF5BMl5BanBnXkFtZTgwMDQ3NTc2MjI@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
     "description": "Several years after the tragic death of their little girl, a dollmaker and his wife welcome a nun and several girls from a shuttered orphanage into their home, soon becoming the target of the dollmaker's possessed creation, Annabelle."
   },
-
   {
     "id": "39",
     "name": "Arrival",
@@ -274,7 +272,6 @@
     "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTExMzU0ODcxNDheQTJeQWpwZ15BbWU4MDE1OTI4MzAy._V1_SY1000_CR0,0,640,1000_AL_.jpg",
     "description": "When twelve mysterious spacecraft appear around the world, linguistics professor Louise Banks is tasked with interpreting the language of the apparent alien visitors."
   },
-
   {
     "id": "40",
     "name": "Leatherface",
@@ -282,7 +279,6 @@
     "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTEyMTIwNzg1NjNeQTJeQWpwZ15BbWU4MDkwMTQ4MDMy._V1_SY1000_CR0,0,716,1000_AL_.jpg",
     "description": "A teenage Leatherface escapes from a mental hospital with three other inmates, kidnapping a young nurse and taking her on a road trip from hell while being pursued by an equally deranged lawman out for revenge."
   },
-
   {
     "id": "41",
     "name": "The Dark Knight",
@@ -345,11 +341,12 @@
     "genre": "Adventure",
     "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTkxMjgwMDM4Ml5BMl5BanBnXkFtZTgwMTk3NTIwNDE@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
     "description": "A spy organization recruits an unrefined, but promising street kid into the agency's ultra-competitive training program, just as a global threat emerges from a twisted tech genius."
-  },{
-  "id": "50",
-  "name": "Sen to Chihiro no kamikakushi",
-  "genre": "Animation",
-  "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BOGJjNzZmMmUtMjljNC00ZjU5LWJiODQtZmEzZTU0MjBlNzgxL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
-  "description": "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts."
-}
+  },
+  {
+    "id": "50",
+    "name": "Sen to Chihiro no kamikakushi",
+    "genre": "Animation",
+    "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BOGJjNzZmMmUtMjljNC00ZjU5LWJiODQtZmEzZTU0MjBlNzgxL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
+    "description": "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts."
+  }
 ]

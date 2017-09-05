@@ -6,8 +6,8 @@ import commentsReducer from './commentReducer';
 import ratingReducer from './raitingReducer';
 
 export default combineReducers({
-   user: usersReducer,
-   movies: movieReducer,
+    user: usersReducer,
+    movies: movieReducer,
     comment: commentsReducer,
     rating: ratingReducer
 });

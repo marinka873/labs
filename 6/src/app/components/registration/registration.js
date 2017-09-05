@@ -14,7 +14,7 @@ class Registration extends React.Component {
         };
     }
 
-    componentDidMount (){
+    componentDidMount() {
         if (localStorage.getItem('userEmail') &&
             localStorage.getItem('userPassword')) {
             this.props.history.push('/moviesList');
@@ -34,16 +34,15 @@ class Registration extends React.Component {
     };
 
     addUser = (event) => {
+        let userEmail = this.state.email;
+        let userPassword = this.state.password;
+        let user = {
+            keyEmail: userEmail,
+            keyPassword: userPassword
+        };
         event.preventDefault();
 
         if (this.state.email.length > 0 && this.state.password.length > 0) {
-
-            let userEmail = this.state.email;
-            let userPassword = this.state.password;
-            let user = {
-                keyEmail: userEmail,
-                keyPassword: userPassword
-            };
 
             localStorage.setItem('userEmail', user.keyEmail);
             localStorage.setItem('userPassword', user.keyPassword);
@@ -70,8 +69,8 @@ class Registration extends React.Component {
                         <input type="password" placeholder="Password" onChange={this.handleChangePassword}
                                value={this.state.password}/>
                         <br/>
-                            <button type="submit" className="btn btn-primary btn-lg" onClick={this.addUser}>Login
-                            </button>
+                        <button type="submit" className="btn btn-primary btn-lg" onClick={this.addUser}>Login
+                        </button>
                     </fieldset>
                 </form>
                 {this.state.loginError && <div>

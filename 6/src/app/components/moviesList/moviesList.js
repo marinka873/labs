@@ -2,7 +2,6 @@ import React from 'react';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
-
 import {setMoviesList} from '../../actions/movieAction';
 import movieJSON from '../../movie.json';
 import Navbar from '../navbar/navbar';
@@ -16,7 +15,7 @@ class MoviesList extends React.Component {
     }
 
     componentDidMount() {
-        if(this.props.movies !== 0 ) {
+        if (this.props.movies !== 0) {
             this.props.setMoviesList(movieJSON);
         }
     }
@@ -27,7 +26,6 @@ class MoviesList extends React.Component {
         });
 
         let searchValue = this.state.search;
-
         let filterMoviesList = this.props.filmsList.filter((search) => {
             return search.name.toLowerCase().indexOf(searchValue.toLowerCase()) !== -1
         });
@@ -57,14 +55,12 @@ class MoviesList extends React.Component {
         return (
             <div className="container-film">
                 <Navbar history={this.props.history}/>
-
                 <div className="component-search">
                     <form className="form-group">
                         <input className="form-control" id="focusedInput" type="text" placeholder="Search movies ..."
                                value={this.state.search} onChange={this.handleChangeSearch}/>
                     </form>
                 </div>
-
                 <h1>Movie list:</h1>
                 {this.renderMoviesList()}
             </div>
@@ -75,18 +71,15 @@ class MoviesList extends React.Component {
 MoviesList.defaultProps = {
     filmsList: []
 };
-
 MoviesList.PropTypes = {
     setMoviesList: PropTypes.func.isRequired,
     filmsList: PropTypes.array.isRequired
 };
-
 const mapStateToProps = (state) => {
     return {
         filmsList: state.movies
     }
 };
-
 const mapDispatchToProps = () => {
     return dispatch => ({
         setMoviesList: (movieJSON) => {
